@@ -4,7 +4,6 @@
     left: 0;
     right: 0;
     height: 100vh;
-    background: #d30215;
 }
 
 .particle-network-animation::before {
