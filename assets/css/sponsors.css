@@ -1,5 +1,5 @@
 .sponsors {
     width: 100vw;
-    height: 50vh;
-    background-color: white;
+    height: 50px;
+    background-image: linear-gradient(transparent, black);
 }

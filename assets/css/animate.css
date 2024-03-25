@@ -6,7 +6,7 @@
 	right: 0;
 	bottom: 0;
 	left: 0;
-	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28359/marvel.jpg');
+	background: url('../img/marvel-bg.jpg');
 	animation: fade 6s steps(30) forwards;
 }
 
@@ -136,7 +136,7 @@
 
 .logo:nth-child(1) {
 	animation: change 8s steps(30) forwards;
-	background: url('https://s3-us-west-2.amazonaws.com/s.cdpn.io/28359/marvel.jpg');
+	background: url('../img/marvel-bg.jpg');
 	background-size: 2000px auto;
 	background-clip: text;
 	filter: drop-shadow(0 -1px 0 black) drop-shadow(0 1px 0 black) drop-shadow(1px 0 0 black) drop-shadow(-1px 0 0 black);

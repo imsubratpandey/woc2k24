@@ -9,9 +9,43 @@ $(function () {
     });
 });
 
+function scrollToHome() {
+    document.getElementById("welcome-box-id").scrollIntoView();
+}
+
+function scrollToAbout() {
+    document.getElementById("about-event-id").scrollIntoView();
+}
+
+function scrollToSchedule() {
+    document.getElementById("schedule-id").scrollIntoView();
+}
+
+function scrollToSponsors() {
+    document.getElementById("sponsors-id").scrollIntoView();
+}
+
+function scrollToContact() {
+    document.getElementById("footer-id").scrollIntoView();
+}
+
+function hidePopup() {
+    document.getElementsByClassName("popup-container")[0].style.opacity = "0";
+    document.getElementsByClassName("popup-container")[0].style.top = "-100vh";
+};
+
+async function showPopup() {
+    document.getElementsByClassName("popup-container")[0].style.opacity = "1";
+    document.getElementsByClassName("popup-container")[0].style.top = "0";
+};
+
 window.onbeforeunload = function () {
     window.scrollTo(0, 0);
 }
+
+document.getElementsByClassName("popup")[0].addEventListener('click', function (e) {
+    e.stopPropagation();
+})
 
 let toggleNavStatus = false;
 

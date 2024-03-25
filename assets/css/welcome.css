@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 ::-webkit-scrollbar {
@@ -29,6 +30,7 @@
     display: none;
     flex-wrap: wrap;
     z-index: 10000;
+    animation: 7s fadein;
 }
 
 .btn-toggle-nav {
@@ -75,7 +77,7 @@
     width: 0px;
     height: calc(100vh);
     padding: 0 0px;
-    background-color: rgba(0,0,0,0.7);
+    background-color: rgba(0, 0, 0, 0.7);
     z-index: 1000;
     transition: all 0.3s ease-in-out;
 }
@@ -91,7 +93,8 @@
     list-style: none;
 }
 
-.nav-sidebar ul li span, .nav-sidebar ul li a {
+.nav-sidebar ul li span,
+.nav-sidebar ul li a {
     display: block;
     height: 60px;
     padding: 0 10px;
@@ -107,6 +110,7 @@
 
 .nav-sidebar ul li a:hover {
     background-color: #222;
+    cursor: pointer;
 }
 
 .navbar {
@@ -124,11 +128,12 @@
     z-index: 10;
     transition: 0.3s ease-in;
     overflow: hidden;
-    /* animation: 7s fadein; */
+    animation: 7s fadein;
 
     img {
         width: 100px;
         height: 100px;
+        cursor: pointer;
     }
 
     .nav-items {
@@ -144,6 +149,7 @@
         li a {
             text-decoration: none;
             color: white;
+            cursor: pointer;
         }
     }
 }
@@ -580,4 +586,24 @@
     text-shadow: 0px 4px 3px rgba(0, 0, 0, 0.4),
         0px 8px 13px rgba(0, 0, 0, 0.1),
         0px 18px 23px rgba(0, 0, 0, 0.1);
+}
+
+
+.panel {
+    animation: 7s aftereffectshow;
+}
+
+@keyframes aftereffectshow {
+    0% {
+        opacity: 0;
+        display: none;
+    }
+
+    99% {
+        display: none;
+    }
+
+    100% {
+        display: flex;
+    }
 }

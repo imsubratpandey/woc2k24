@@ -11,3 +11,87 @@
         justify-content: end;
     }
 }
+
+@media only screen and (max-width: 950px) {
+    .about-logo {
+        display: none;
+    }
+
+    .about-para {
+        width: 90vw;
+        height: max-content;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    footer {
+        align-items: center;
+    }
+
+    .col2 {
+        display: none;
+    }
+
+    .col {
+        width: max-content;
+    }
+}
+
+@media only screen and (max-width: 1050px) {
+    .benefit-box {
+        flex-direction: column !important;
+        height: unset !important;
+    }
+
+    .benefit-single-item {
+        width: 100vw !important;
+        height: unset !important;
+        padding: 20px;
+    }
+}
+
+@media only screen and (max-width: 570px) {
+    .benefit {
+        h2 {
+            font-size: xx-large !important;
+            margin-top: 50px !important;
+        }
+
+        p {
+            text-align: justify;
+        }
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .logo {
+        font-size: 3em !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .small-screen {
+        display: flex !important;
+        flex-direction: column !important;
+    }
+
+    .large-screen {
+        display: none !important;
+    }
+}
+
+@media only screen and (min-width: 700px) {
+    .small-screen {
+        display: none !important;
+    }
+
+    .large-screen {
+        display: flex !important;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .popup {
+        width: 90vw;
+    }
+}

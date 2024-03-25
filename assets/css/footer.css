@@ -27,7 +27,7 @@ footer {
 
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: flex-end;
   padding: 5rem 2vw;
   position: relative;
@@ -68,7 +68,19 @@ footer::before {
   align-items: flex-start;
   justify-content: flex-start;
   padding: calc(0.3 * var(--m)) calc(0.8 * var(--m));
-  width: 100%;
+}
+
+.col2 {
+  margin-right: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+
+  img {
+    height: 200px;
+    width: 200px;
+  }
 }
 
 img {
@@ -87,12 +99,19 @@ a {
   text-decoration: none;
   color: inherit;
 
+  svg {
+    fill: #222326;
+    transition: 0.2s ease-in;
+  }
+
+  svg:hover {
+    fill: #19191a;
+  }
 }
 
 .link {
   width: calc(0.8 * var(--m));
   height: calc(0.8 * var(--m));
-  background-color: rgba(255, 255, 255, 0.1);
   border-radius: calc(0.1 * var(--m));
 
   display: flex;

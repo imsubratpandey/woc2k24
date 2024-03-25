@@ -1,6 +1,7 @@
 .about-event {
     width: 100vw;
-    height: 100vh;
+    padding-top: 65px;
+    margin-bottom: 10px;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -9,11 +10,11 @@
 
 .about-para {
     width: 50vw;
-    height: 80vh;
     color: white;
     padding: 20px;
     text-align: justify;
     overflow: hidden;
+
     h2 {
         font-family: 'Passion One',
             impact;
@@ -28,10 +29,15 @@
 
 .about-logo {
     width: 50vw;
-    height: 80vh;
+    height: fit-content;
     padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
     img {
+        flex-shrink: 0;
+        height: auto;
         transform: translateY(-30px);
         -webkit-filter: drop-shadow(2px 2px 0 rgb(255, 255, 255)) drop-shadow(-2px -2px 0 rgb(255, 255, 255));
         filter: drop-shadow(2px 2px 0 rgb(255, 255, 255)) drop-shadow(-2px -2px 0 rgb(255, 255, 255));
