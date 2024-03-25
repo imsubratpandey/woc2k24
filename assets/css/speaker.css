@@ -1,0 +1,22 @@
+.speaker {
+    width: 100vw;
+    background-color: rgba(66, 66, 66, 0.548);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    /* border-radius: 100px 100px 0px 0px; */
+    font-family: 'Passion One', impact;
+    color: white;
+    font-size: xxx-large;
+    h1{
+        font-size: xx-large;
+    }
+    img {
+        height: 400px;
+        margin-bottom: 10px;
+        border-radius: 10px;
+    }
+}

@@ -1,0 +1,62 @@
+.event-info {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    ul {
+        border-radius: 10px;
+        padding: 20px;
+        font-family: 'Passion One',
+            impact;
+        width: 90vw;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        align-items: center;
+        font-size: large;
+
+        :nth-child(1) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: #cedc00;
+
+            svg {
+                width: 40px;
+                height: 40px;
+                fill: #cedc00;
+            }
+        }
+
+        :nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: #cedc00;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                margin: 10px;
+                fill: #cedc00;
+            }
+        }
+
+        :nth-child(3) {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            color: #cedc00;
+
+            svg {
+                width: 30px;
+                height: 30px;
+                margin: 10px;
+                fill: #cedc00;
+            }
+        }
+    }
+}

@@ -1,0 +1,39 @@
+.about-event {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.about-para {
+    width: 50vw;
+    height: 80vh;
+    color: white;
+    padding: 20px;
+    text-align: justify;
+    overflow: hidden;
+    h2 {
+        font-family: 'Passion One',
+            impact;
+        font-size: xxx-large;
+    }
+
+    ul {
+        list-style: initial;
+        margin: 13px;
+    }
+}
+
+.about-logo {
+    width: 50vw;
+    height: 80vh;
+    padding: 40px;
+
+    img {
+        transform: translateY(-30px);
+        -webkit-filter: drop-shadow(2px 2px 0 rgb(255, 255, 255)) drop-shadow(-2px -2px 0 rgb(255, 255, 255));
+        filter: drop-shadow(2px 2px 0 rgb(255, 255, 255)) drop-shadow(-2px -2px 0 rgb(255, 255, 255));
+    }
+}

@@ -1,0 +1,62 @@
+.benefit {
+    width: 100vw;
+    background-image: linear-gradient(rgba(66, 66, 66, 0.548), transparent);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: auto;
+    margin-bottom: 50px;
+    /* border-radius: 0px 0px 100px 100px; */
+    color: white;
+    text-align: center;
+    cursor: default;
+
+    h2 {
+        margin-top: 10px;
+        font-family: 'Passion One', impact;
+        font-size: xxx-large;
+    }
+
+    p {
+        padding: 30px;
+    }
+}
+
+.benefit-box {
+    width: 100vw;
+    height: 250px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.benefit-single-item {
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px;
+    height: 100%;
+    padding: 10px;
+    transition: 0.2s ease-in;
+    cursor: default;
+
+    h2 {
+        color: black;
+        font-size: x-large;
+        text-align: left;
+    }
+
+    p {
+        padding: 0px;
+        margin-top: 30px;
+        color: black;
+        text-align: justify;
+    }
+}
+
+.benefit-single-item:hover {
+    scale: 102%;
+    box-shadow: 0 0 20px 1px #48abe0;
+}

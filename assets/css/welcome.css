@@ -33,8 +33,10 @@
     justify-content: space-between;
     padding: 15px;
     position: fixed;
-    z-index: 3;
-    animation: 7s fadein;
+    z-index: 10;
+    transition: 0.3s ease-in;
+    overflow: hidden;
+    /* animation: 7s fadein; */
 
     img {
         width: 100px;
@@ -79,14 +81,6 @@
     position: relative;
     z-index: 2;
     overflow: hidden;
-}
-
-.content-box {
-    width: 100vw;
-    height: 100vh;
-    /* background-color: rgba(3, 28, 250, 0.63); */
-    z-index: 2;
-    position: relative;
 }
 
 .static-logo {
@@ -350,7 +344,32 @@
             0% 10%)
 }
 
+@keyframes fadein2 {
+    0% {
+        opacity: 0;
+    }
+
+    90% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
 .color-cover {
+    width: 100vw;
+    height: 100vh;
+    background-color: #d3021354;
+    background-image: linear-gradient(transparent, black);
+    position: absolute;
+    top: 0;
+    animation: 9s fadein2;
+    z-index: 6;
+}
+
+.color-cover-2 {
     width: 100vw;
     height: 100vh;
     background-color: #d3021354;

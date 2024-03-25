@@ -6,9 +6,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WoC 2024 | MNNIT</title>
     <link rel="stylesheet" type="text/css" href="assets/css/welcome.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/timer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/sponsors.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/eventinfo.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/speaker.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/schedule.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/benefit.css">
     <link rel="stylesheet" href="./assets/css/background.css">
     <link rel="stylesheet" href="./assets/css/animate.css">
     <link rel="stylesheet" href="./assets/css/foganimation.css">
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
 <body>
@@ -33,92 +42,360 @@
                 </li>
             </ul>
         </div>
-        <div class="container" id="container">
-            <div class="welcome-box panel">
-                <div class="color-cover">
+        <div class="welcome-box panel">
+            <div class="images-cover">
+                <img src="./assets/img/ironman2.jpg" alt="none">
+                <img src="./assets/img/captainamerica.jpg" alt="none">
+                <img src="./assets/img/thor.jpg" alt="none">
+                <img src="./assets/img/hulk2.jpg" alt="none">
+            </div>
+            <div class="fogwrapper">
+                <div id="foglayer_01" class="fog">
+                    <div class="image01"></div>
+                    <div class="image02"></div>
                 </div>
-                <div class="images-cover">
-                    <img src="./assets/img/ironman2.jpg" alt="none">
-                    <img src="./assets/img/captainamerica.jpg" alt="none">
-                    <img src="./assets/img/thor.jpg" alt="none">
-                    <img src="./assets/img/hulk2.jpg" alt="none">
+                <div id="foglayer_02" class="fog">
+                    <div class="image01"></div>
+                    <div class="image02"></div>
                 </div>
-                <div class="fogwrapper">
-                    <div id="foglayer_01" class="fog">
-                        <div class="image01"></div>
-                        <div class="image02"></div>
-                    </div>
-                    <div id="foglayer_02" class="fog">
-                        <div class="image01"></div>
-                        <div class="image02"></div>
-                    </div>
-                    <div id="foglayer_03" class="fog">
-                        <div class="image01"></div>
-                        <div class="image02"></div>
-                    </div>
+                <div id="foglayer_03" class="fog">
+                    <div class="image01"></div>
+                    <div class="image02"></div>
                 </div>
-                <input class="retrigger" type="radio" name="rerun" id="retrigger--1" /><input class="retrigger"
-                    type="radio" name="rerun" id="retrigger--2" checked="checked" />
-                <div class="bg">
-                    <div class="color-cover">
-                    </div>
+            </div>
+            <div class="color-cover">
+            </div>
+            <input class="retrigger" type="radio" name="rerun" id="retrigger--1" /><input class="retrigger" type="radio"
+                name="rerun" id="retrigger--2" checked="checked" />
+            <div class="bg">
+                <div class="color-cover-2">
                 </div>
-                <div class="pane">
-                    <div class="rotate">
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo">WEEKEND_OF_CODE</div>
-                        <div class="logo-static">WEEKEND_OF_CODE</div>
-                        <div class="static-logo text1">
-                            HELLO THERE
-                        </div>
-                        <div class="static-items">
-                            <div class="event-title text1">DevJam + CodeStart</div>
-                            <div class="register-container">
-                                <div class="register-cover"></div>
-                                <div class="register-main">Register</div>
-                            </div>
+            </div>
+            <div class="pane">
+                <div class="rotate">
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo">WEEKEND_OF_CODE</div>
+                    <div class="logo-static">WEEKEND_OF_CODE</div>
+                    <div class="static-logo text1">
+                        HELLO THERE
+                    </div>
+                    <div class="static-items">
+                        <div class="event-title text1">DevJam + CodeStart</div>
+                        <div class="register-container">
+                            <div class="register-cover"></div>
+                            <div class="register-main">Register</div>
                         </div>
                     </div>
                 </div>
-            </div>
-            <div class="content-box panel">
-                2
-            </div>
-            <div class="panel">
-                3
-            </div>
-            <div class="panel">
-                4
-            </div>
-            <div class="panel">
-                5
-            </div>
-            <div class="panel">
-                6
             </div>
         </div>
+        <div class="timer-box panel">
+            <div
+                class="text-[#00352F] flex justify-center items-center min-h-screen p-4 transition-all duration-700 [--primary:#00352F] [--accent:#CEDC00] [--accent-border:#CEDC0050] ">
+                <div class="w-full max-w-3xl m Xtext-center ">
+                    <h1
+                        class="text-white/70 text-[clamp(2rem,8vw,6rem)] tracking-wide transition-all duration-700 uppercase">
+                        WE ARE ABOUT TO BEGIN IN...</h1>
+                    <div data-color class="w-full grid grid-cols-2 min-[500px]:grid-cols-4 items-center justify-center gap-2 sm:gap-4 sm:gap-4 text-[var(--accent)] font-thin text-5xl 
+                      *:bg-black/60
+                      *:ring-4
+                      *:ring-black/5
+                      *:aspect-square
+                      *:px-8
+                      
+                      sm:*:px-10 
+                      md:*:px-14
+  
+                      *:shadow-xl
+                      *:transition
+                      *:grid
+                      *:gap-1
+                      *:grid-cols-2
+                      *:items-center 
+                      *:justify-center                    
+                      *:overflow-hidden
+                      *:relative
+                      *:isolate
+                      *:border
+                      *:border-white/30
+  
+                      [&_span]:grid
+                      first:[&_span]:place-content-end
+                      last:[&_span]:place-content-start
+                      [&_span]:
+                      [&_span]:font-bold
+                      [&_span]:text-[4rem]
+                      min-[500px]:[&_span]:text-[6rem]
+                      [&_span]:text-[var(--accent)]
+                      [&_span]:duration-700
+                      [&_span]:transition-all
+                      [&_span]:ease-in-out
+                      
+                      after:*:absolute
+                      after:*:font-thin
+                      after:*:content-[attr(data-desc)]
+                      after:*:bottom-1
+                      sm:after:*:-bottom-3
+                      after:*:left-6
+                      after:*:text-left
+                      after:*:text-2xl
+                      sm:after:*:text-4xl
+                      after:*:uppercase
+                      after:*:text-white/50
+                      sm:after:*:-rotate-90
+                      after:*:origin-left
+                      after:*:opacity-50 
+                      after:*:tracking-wider
+  
+                      before:*:absolute
+                      before:*:-inset-2/4
+                      before:*:rounded-full
+                      before:*:bg-black/20 
+                      before:*:-z-10
+                  ">
+                        <div id="days" data-desc="Days" class="animate-in " style="--d:1500ms">
+                            <span>2</span>
+                            <span>0</span>
+                        </div>
+                        <div id="hours" data-desc="Hours" class="animate-in " style="--d:1200ms">
+                            <span>2</span>
+                            <span>3</span>
+                        </div>
+                        <div id="minutes" data-desc="Minutes" class="animate-in " style="--d:800ms">
+                            <span>1</span>
+                            <span>2</span>
+                        </div>
+
+                        <div id="seconds" data-desc="seconds" class="animate-in " style="--d:500ms">
+                            <span>0</span>
+                            <span>1</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="about-event panel">
+            <div class="about-logo">
+                <img src="./assets/img/hologram.png" alt="">
+            </div>
+            <div class="about-para">
+                <h2>About the Event</h2>
+                <p>𝗪𝗲𝗲𝗸𝗲𝗻𝗱 𝗢𝗳 𝗖𝗼𝗱𝗲, the annual technical event of MNNIT, Allahabad is up with its 2k21
+                    edition! The enthralling week long
+                    event consists of 𝗗𝗲𝘃𝗝𝗮𝗺 and 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁. 𝗗𝗲𝘃𝗝𝗮𝗺 aims at providing a glimpse of
+                    the world of development to our freshmen
+                    while 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁 is a coding event for our freshmen and sophomores. The sole purpose of this
+                    event is to provide
+                    participants with hands-on experience and exposure along with proper guidance. Get ready for an
+                    adventurous journey of
+                    learning, innovating and exploring new technologies.
+                </p>
+                <ul>
+                    <li>Week dedicated to coding and development</li>
+                    <li>Meet Developers and Coders from your batch</li>
+                    <li>Get Inspired by Amazing Mentors</li>
+                    <li>Make project in any language you want</li>
+                    <li>Test your coding skills with 5 hour insomaniac event
+                        𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁</li>
+                    <li>Completely Remote Edition</li>
+                </ul>
+            </div>
+        </div>
+        <div class="event-info panel">
+            <ul>
+                <li>
+                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="1.000000" stroke="none"
+                            d="M 257.02 466.922 C 252.892 470.297 249.039 473.448 244.511 477.153 C 231.86 465.947 219.005 455.138 206.799 443.64 C 169.413 408.426 136.024 369.887 110.52 325.021 C 94.799 297.366 82.7 268.308 78.662 236.467 C 71.581 180.636 87.424 132.062 127.649 92.754 C 220.047 2.463 374.727 45.683 407.529 170.604 C 417.804 209.736 412.831 247.854 398.343 285.069 C 382.769 325.075 358.964 360.012 331.507 392.643 C 308.925 419.48 284.012 443.997 257.02 466.922 M 291.393 147.729 C 279.041 138.923 265.261 133.895 250.163 132.962 C 199.43 129.827 159.183 173.07 165.723 223.51 C 171.573 268.631 215.381 300.603 259.625 291.332 C 292.796 284.381 314.766 264.07 322.486 231.099 C 330.355 197.485 319.146 169.549 291.393 147.729 Z" />
+                    </svg> MNNIT, Allahabad
+                </li>
+                <li>
+                    <svg viewBox="4.2549 8.0714 483.6102 452.0726" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="1.000000" stroke="none"
+                            d="M 6.57 430.777 C 5.031 424.705 4.397 418.948 4.399 413.079 C 4.43 323.431 4.444 233.784 4.34 144.136 C 4.335 140.363 5.09 139.169 9.149 139.172 C 167.115 139.289 325.081 139.29 483.047 139.172 C 487.142 139.169 487.869 140.436 487.865 144.179 C 487.767 232.66 487.79 321.141 487.788 409.622 C 487.788 434.92 471.135 454.685 446.044 459.12 C 442.108 459.815 438.139 460.145 434.119 460.144 C 305.313 460.112 176.507 460.121 47.702 460.114 C 26.502 460.112 13.552 450.951 6.57 430.777 Z" />
+                        <path opacity="1.000000" stroke="none"
+                            d="M 238.388 8.269 C 277.554 8.269 316.22 8.32 354.885 8.187 C 358.644 8.174 359.986 8.918 359.902 12.999 C 359.625 26.326 359.686 39.664 359.853 52.995 C 359.946 60.446 364.342 66.117 370.847 67.954 C 376.787 69.632 383.485 67.222 387.221 62.083 C 389.602 58.806 390.005 55.045 390.001 51.158 C 389.986 38.325 390.112 25.49 389.919 12.66 C 389.867 9.261 390.646 8.056 394.259 8.195 C 410.728 8.825 427.281 6.976 443.68 9.222 C 464.354 12.053 482.409 28.903 485.844 47.919 C 486.139 49.55 486.322 51.225 486.326 52.879 C 486.364 69.879 486.282 86.879 486.427 103.877 C 486.452 106.885 485.754 108.286 482.588 107.784 C 481.775 107.656 480.924 107.765 480.091 107.765 C 323.596 107.765 167.1 107.743 10.605 107.87 C 5.823 107.874 4.121 107.113 4.263 101.793 C 4.693 85.638 4.36 69.464 4.448 53.298 C 4.501 43.455 6.757 34.162 12.246 25.845 C 19.763 14.456 30.336 8.432 44.025 8.299 C 57.524 8.168 71.027 8.414 84.522 8.175 C 88.235 8.109 88.824 9.427 88.782 12.723 C 88.61 26.053 88.621 39.389 88.752 52.72 C 88.826 60.244 92.981 65.83 99.525 67.857 C 105.572 69.73 112.489 67.243 116.283 61.905 C 118.533 58.74 118.892 55.146 118.891 51.438 C 118.888 38.772 119.061 26.102 118.794 13.441 C 118.709 9.404 119.581 8.138 123.891 8.16 C 161.89 8.348 199.889 8.269 238.388 8.269 Z" />
+                        <path fill="#000000" opacity="1.000000" stroke="none"
+                            d="M 209.301 378.915 C 209.301 366.961 209.258 355.473 209.316 343.986 C 209.36 335.232 213.733 330.667 222.464 330.56 C 234.282 330.414 246.105 330.408 257.924 330.562 C 266.286 330.672 270.875 335.214 271.007 343.639 C 271.196 355.623 271.211 367.614 270.997 379.597 C 270.839 388.435 266.782 392.203 257.897 392.256 C 246.077 392.327 234.257 392.335 222.437 392.255 C 213.962 392.198 209.792 388.02 209.301 378.915 Z" />
+                        <path fill="#000000" opacity="1.000000" stroke="none"
+                            d="M 329.626 228.194 C 329.626 221.369 329.55 215.043 329.645 208.719 C 329.781 199.692 334.286 195.165 343.153 195.126 C 354.804 195.074 366.456 195.071 378.106 195.127 C 386.784 195.17 391.365 199.695 391.412 208.308 C 391.478 220.292 391.492 232.277 391.404 244.26 C 391.345 252.308 387.694 256.496 379.675 256.711 C 367.035 257.049 354.374 257.052 341.734 256.724 C 334.209 256.53 329.971 251.803 329.671 244.171 C 329.469 239.019 329.628 233.853 329.626 228.194 Z" />
+                        <path fill="#000000" opacity="1.000000" stroke="none"
+                            d="M 391.43 359.195 C 391.426 366.519 391.514 373.344 391.394 380.166 C 391.257 388.039 387.203 392.144 379.296 392.226 C 366.982 392.353 354.664 392.348 342.349 392.242 C 334.805 392.177 329.943 387.818 329.753 380.309 C 329.438 367.835 329.467 355.343 329.718 342.866 C 329.869 335.32 334.487 330.754 342.039 330.606 C 354.351 330.365 366.673 330.365 378.985 330.597 C 387.004 330.747 391.318 335.555 391.417 343.716 C 391.477 348.709 391.429 353.702 391.43 359.195 Z" />
+                        <path fill="#000000" opacity="1.000000" stroke="none"
+                            d="M 268.748 200.039 C 270.676 202.969 271.051 205.925 271.055 208.953 C 271.069 220.282 271.134 231.611 271.037 242.94 C 270.951 252.974 267.134 256.758 257.015 256.843 C 245.687 256.939 234.356 256.962 223.028 256.837 C 213.703 256.734 209.346 252.23 209.312 242.921 C 209.27 231.426 209.254 219.93 209.317 208.435 C 209.366 199.679 213.824 195.175 222.487 195.129 C 234.315 195.067 246.145 195.165 257.973 195.086 C 262.249 195.058 265.798 196.368 268.748 200.039 Z" />
+                        <path fill="#000000" opacity="1.000000" stroke="none"
+                            d="M 126.385 392.277 C 118.226 392.274 110.565 392.362 102.907 392.242 C 95.132 392.121 90.434 387.505 90.364 379.806 C 90.252 367.485 90.246 355.161 90.368 342.84 C 90.437 335.834 94.715 330.893 101.655 330.704 C 114.632 330.35 127.632 330.353 140.609 330.701 C 147.391 330.882 151.763 335.401 151.955 342.303 C 152.297 354.615 152.349 366.951 151.995 379.262 C 151.767 387.188 146.252 392.037 138.374 392.242 C 134.547 392.341 130.715 392.27 126.385 392.277 Z" />
+                        <path fill="#000000" opacity="1.000000" stroke="none"
+                            d="M 97.691 196.007 C 99.613 195.026 101.308 195.132 102.962 195.129 C 115.128 195.107 127.295 195.047 139.461 195.14 C 146.828 195.196 151.695 199.344 151.92 206.647 C 152.305 219.134 152.371 231.651 151.952 244.134 C 151.702 251.589 146.526 256.463 138.957 256.686 C 126.802 257.045 114.623 257.056 102.467 256.743 C 94.631 256.541 90.399 251.711 90.348 243.816 C 90.271 231.817 90.343 219.817 90.323 207.818 C 90.314 202.509 92.424 198.508 97.691 196.007 Z" />
+                    </svg>April 1st,2024 - April 6th,2024
+                </li>
+                <li>
+                    <svg viewBox="47.668 9.9791 359.3399 501.5216" xmlns="http://www.w3.org/2000/svg">
+                        <path opacity="1.000000" stroke="none"
+                            d="M 285.423 27.361 C 317.384 49.35 333.624 79.549 333.989 117.895 C 334.356 156.384 334.276 194.88 334.019 233.371 C 333.667 285.955 298.493 328.545 247.318 338.869 C 189.429 350.548 131.537 310.356 122.202 252.059 C 121.172 245.623 120.589 239.165 120.583 232.665 C 120.549 194.506 120.464 156.347 120.593 118.188 C 120.747 72.237 147.331 32.891 189.524 17.209 C 222.819 4.835 254.858 8.425 285.423 27.361 Z" />
+                        <path opacity="1.000000" stroke="none"
+                            d="M 379.302 351.459 C 346.386 392.785 304.204 417.325 252.101 424.421 C 248.838 424.866 248.521 426.283 248.529 428.95 C 248.595 449.442 248.75 469.937 248.476 490.425 C 248.28 505.116 234.43 514.858 220.696 510.421 C 211.768 507.536 206.141 499.638 206.096 489.443 C 206.007 469.618 205.957 449.79 206.16 429.966 C 206.201 425.977 205.101 424.917 201.07 424.255 C 129.282 412.465 78.735 373.089 49.504 306.518 C 44.547 295.228 50.03 282.882 61.113 278.408 C 72.415 273.845 84.141 278.979 89.222 291.025 C 101.63 320.44 121.173 343.829 148.248 360.726 C 226.02 409.262 328.292 377.227 364.485 293.016 C 367.672 285.601 371.988 279.62 380.15 277.56 C 388.442 275.468 395.737 277.622 401.433 284.001 C 407.281 290.551 408.488 298.228 405.243 306.335 C 398.781 322.477 390.144 337.406 379.302 351.459 Z" />
+                    </svg>30+ Mentors
+                </li>
+            </ul>
+        </div>
+        <div class="speaker panel">
+            <h2>SPEAKER</h2>
+            <div class="speaker-info">
+                <img src="./assets/img/speaker.jpg" alt="">
+                <h1>Mr. Bean</h1>
+            </div>
+        </div>
+        <div class="benefit panel">
+            <h2>WHY SHOULD YOU JOIN</h2>
+            <p>Participating in WoC will go a long way towards developing your technical skills. This event will be a
+                great opportunity for freshmen to get started with developing and coding. You don’t need any prior
+                knowledge to participate in this event (except zeal for learning!!) because your mentor will guide you
+                through every step. At the end of this event you will have a great project. Coding and developing skills
+                will also help you in getting an internship and placement. Don’t miss out this opportunity and discover
+                the fun in coding and developing.
+            </p>
+            <div class="benefit-box">
+                <div class="benefit-single-item">
+                    <h2>Introduction to Open Source</h2>
+                    <p>Get yourself introduced to Open Source Communities and be a part of them. Feel proud to be a
+                        member of communities like GitHub, Python Software Foundation, etc.</p>
+                </div>
+                <div class="benefit-single-item">
+                    <h2>Intro to Competitive Programming</h2>
+                    <p>Get yourself introduced to Competitive Programming. Sharpen your competitive programming skills
+                        by competing against brightest minds of college.</p>
+                </div>
+                <div class="benefit-single-item">
+                    <h2>Projects for your Resume</h2>
+                    <p>Enhance your Resume with exciting projects developed under the guidance of the Mentors, having
+                        expertise in their respective fields of development.</p>
+                </div>
+            </div>
+        </div>
+        <div class="schedule">
+            <h2>EVENTS TIMELINE</h2>
+            <ul class="timeline">
+                <!-- Item 1 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">𝗜𝗻𝗮𝘂𝗴𝘂𝗿𝗮𝘁𝗶𝗼𝗻</span>
+                            <span class="time-wrapper"><span class="time">1 April 2024</span></span>
+                        </div>
+                        <div class="desc">Tech Talks | Mentor Allotment | The submission of Abstract by the teams
+                            (Deadline: 𝟭𝟲𝘁𝗵 𝗠𝗮𝘆 𝟮𝗽𝗺).</div>
+                    </div>
+                </li>
+
+                <!-- Item 2 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">𝗗𝗲𝘃𝗝𝗮𝗺 𝗪𝗲𝗲𝗸 𝗦𝘁𝗮𝗿𝘁𝘀</span>
+                            <span class="time-wrapper"><span class="time">2 April 2024</span></span>
+                        </div>
+                        <div class="desc">Finally the 𝗗𝗲𝘃𝗝𝗮𝗺 week starts.</div>
+                    </div>
+                </li>
+
+                <!-- Item 3 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">𝗠𝗶𝗱 𝗧𝗲𝗿𝗺 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻</span>
+                            <span class="time-wrapper"><span class="time">4 April 2024</span></span>
+                        </div>
+                        <div class="desc">The midterm evaluation of 𝗗𝗲𝘃𝗝𝗮𝗺 projects by the respective mentors of
+                            each team.</div>
+                    </div>
+                </li>
+
+                <!-- Item 4 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">𝗙𝗶𝗻𝗮𝗹 𝘀𝘂𝗯𝗺𝗶𝘀𝘀𝗶𝗼𝗻 𝗼𝗳 𝗗𝗲𝘃𝗝𝗮𝗺</span>
+                            <span class="time-wrapper"><span class="time">6 April 2024</span></span>
+                        </div>
+                        <div class="desc">Finally the 𝗗𝗲𝘃𝗝𝗮𝗺 week starts.</div>
+                    </div>
+                </li>
+
+                <!-- Item 5 -->
+                <li>
+                    <div class="direction-r">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">𝗙𝗶𝗻𝗮𝗹 𝗘𝘃𝗮𝗹𝘂𝗮𝘁𝗶𝗼𝗻 𝗙𝗼𝗿 𝗗𝗲𝘃𝗝𝗮𝗺</span>
+                            <span class="time-wrapper"><span class="time">7 April 2024</span></span>
+                        </div>
+                        <div class="desc">Judges will start evaluating the projects.</div>
+                    </div>
+                </li>
+
+                <!-- Item 6 -->
+                <li>
+                    <div class="direction-l">
+                        <div class="flag-wrapper">
+                            <span class="hexa"></span>
+                            <span class="flag">𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁𝟰.𝟬</span>
+                            <span class="time-wrapper"><span class="time">8 April 2024</span></span>
+                        </div>
+                        <div class="desc">Finally, 𝗖𝗼𝗱𝗲𝗦𝘁𝗮𝗿𝘁 is here. It will be conducted from 𝟴𝗽𝗺 𝘁𝗼
+                            𝟭𝗮𝗺 on 𝟮𝟵𝘁𝗵 𝗠𝗮𝘆 𝟮𝟬𝟮𝟭.</div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+        <div class="sponsors">
+
+        </div>
+        <div class="footer">
+            <footer id="footer">
+                <div class="col col1">
+                    <h3 class="footer-title">Weekend of Code</h3>
+                    <p>Made with <span style="color: #BA6573;">❤</span> by WebTeam, WoC</p>
+                    <div class="social">
+                        <a href="https://codepen.io/Juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/codepen_1.png" alt="" /></a>
+                        <a href="https://twitter.com/juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/x.png" alt="" /></a>
+                        <a href="https://youtube.com/@juxtopposed" target="_blank" class="link"><img
+                                src="https://assets.codepen.io/9051928/youtube_1.png" alt="" /></a>
+                    </div>
+                    <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
+                </div>
+            </footer>
+        </div>
     </div>
-    <!-- <div class="particle-network-animation"></div> -->
+    <div class="particle-network-animation"></div>
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
     <script src="./assets/scripts/background.js"></script>
+    <script src="./assets/scripts/main.js"></script>
+    <script src="./assets/scripts/timer.js"></script>
 </body>
 
 </html>

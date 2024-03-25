@@ -4,6 +4,8 @@
     left: 0;
     right: 0;
     height: 100vh;
+    width: 100vw;
+    background-color: black;
 }
 
 .particle-network-animation::before {
@@ -14,7 +16,7 @@
     right: 0;
     bottom: 0;
     left: 0;
-    background: #d30215;
+    background-color: black;
     background-position: center center;
     background-size: cover;
     opacity: 0.2;
