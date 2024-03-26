@@ -1,5 +1,22 @@
 .sponsors {
     width: 100vw;
-    height: 50px;
+    height: 150px;
     background-image: linear-gradient(transparent, black);
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+
+    h1 {
+        font-size: xxx-large;
+        font-family: 'Passion One', impact;
+        color: white;
+    }
+
+    img {
+        height: fit-content;
+        transform: translateY(10px);
+        -webkit-filter: drop-shadow(0.5px 0.5px 0 rgb(255, 255, 255)) drop-shadow(-0.5px -0.5px 0 rgb(255, 255, 255));
+        filter: drop-shadow(0.5px 0.5px 0 rgb(255, 255, 255)) drop-shadow(-0.5px -0.5px 0 rgb(255, 255, 255));
+    }
 }

@@ -26,6 +26,7 @@
 @media only screen and (max-width: 720px) {
     footer {
         align-items: center;
+        flex-direction: column;
     }
 
     .col2 {
@@ -34,6 +35,44 @@
 
     .col {
         width: max-content;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .sponsors {
+        width: 100vw;
+        height: 150px;
+        background-image: linear-gradient(transparent, black);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+
+        .sponsor-by {
+            width: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .sponsor-img {
+            width: 50%;
+        }
+
+        h1 {
+            font-size: x-large;
+            font-family: 'Passion One', impact;
+            color: white;
+            width: fit-content;
+        }
+
+        img {
+            height: 100%;
+            width: 150px;
+            transform: translateY(0);
+            -webkit-filter: drop-shadow(0.5px 0.5px 0 rgb(255, 255, 255)) drop-shadow(-0.5px -0.5px 0 rgb(255, 255, 255));
+            filter: drop-shadow(0.5px 0.5px 0 rgb(255, 255, 255)) drop-shadow(-0.5px -0.5px 0 rgb(255, 255, 255));
+        }
     }
 }
 
