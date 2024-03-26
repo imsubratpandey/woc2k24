@@ -398,6 +398,7 @@
     margin: 10px;
     animation: 7s fadein;
     cursor: default;
+    white-space: nowrap;
 }
 
 .register-container {

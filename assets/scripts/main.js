@@ -32,11 +32,14 @@ function scrollToContact() {
 function hidePopup() {
     document.getElementsByClassName("popup-container")[0].style.opacity = "0";
     document.getElementsByClassName("popup-container")[0].style.top = "-200vh";
+    document.getElementsByClassName("main-content")[0].style.height = "unset";
 };
 
 async function showPopup() {
     document.getElementsByClassName("popup-container")[0].style.opacity = "1";
     document.getElementsByClassName("popup-container")[0].style.top = "0";
+    document.getElementsByClassName("main-content")[0].style.height = "100vh";
+    document.getElementsByClassName("main-content")[0].style.overflow = "hidden";
 };
 
 window.onbeforeunload = function () {
