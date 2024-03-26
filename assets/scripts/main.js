@@ -31,7 +31,7 @@ function scrollToContact() {
 
 function hidePopup() {
     document.getElementsByClassName("popup-container")[0].style.opacity = "0";
-    document.getElementsByClassName("popup-container")[0].style.top = "-100vh";
+    document.getElementsByClassName("popup-container")[0].style.top = "-200vh";
 };
 
 async function showPopup() {
