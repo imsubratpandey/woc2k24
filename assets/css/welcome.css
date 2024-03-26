@@ -15,6 +15,20 @@
     border-radius: 0px;
 }
 
+@font-face {
+    font-family: "opensans";
+    src:
+        url("../font/opensans.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+
+.bold-sans {
+    font-family: opensans;
+    font-size: medium;
+}
+
 .main-content {
     /* background-color: rgba(255, 0, 43, 0.329); */
     width: 100vw;
