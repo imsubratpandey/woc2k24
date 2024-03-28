@@ -9,7 +9,7 @@ const elSeconds = document.querySelector("#seconds");
 const elSecondsSpan = elSeconds.querySelectorAll("span");
 
 const currentDate = new Date();
-const expirationDate = new Date(`2024-04-01 00:00`);
+const expirationDate = new Date(`2024-04-06 18:00`);
 
 function getCurrentDate() {
     const currentDate = new Date();

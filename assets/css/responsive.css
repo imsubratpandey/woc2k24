@@ -102,6 +102,15 @@
     }
 }
 
+@media only screen and (max-width: 570px) {
+    .speaker-title-links {
+        margin-bottom: 30px !important;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    }
+}
+
 @media only screen and (max-width: 500px) {
     .logo {
         font-size: 3em !important;

@@ -11,12 +11,43 @@
     font-family: 'Passion One', impact;
     color: white;
     font-size: xxx-large;
-    h1{
+
+    h1 {
         font-size: xx-large;
     }
+
     img {
         height: 400px;
         margin-bottom: 10px;
         border-radius: 10px;
     }
+}
+
+.speaker-title-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 15px;
+}
+
+.speaker-links {
+    height: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    svg {
+        width: 50px;
+        padding: 10px;
+    }
+}
+
+.speaker-links-svgs {
+    fill: #F6F6F6;
+}
+
+.speaker-links-svgs:hover {
+    fill: #a8a8a8;
 }
