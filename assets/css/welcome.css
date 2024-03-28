@@ -23,6 +23,14 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "passionone";
+    src:
+        url("../font/passionone.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
 
 .bold-sans {
     font-family: opensans;
@@ -209,7 +217,7 @@
 }
 
 .event-title {
-    font-family: 'Passion One', impact;
+    font-family: 'passionone';
 }
 
 /* .logo {
@@ -353,7 +361,7 @@
     position: relative;
     transform-style: preserve-3d;
     font-size: 4em;
-    font-family: 'Passion One', impact;
+    font-family: 'passionone';
     letter-spacing: -0.06em;
     animation: hide 8s linear forwards;
     padding: 0 0.2em;
@@ -364,7 +372,7 @@
 
 .static-logo {
     transform: translateY(-45px);
-    font-family: 'Passion One', impact;
+    font-family: 'passionone';
     color: white;
     animation: 7s fadein;
     cursor: default;
