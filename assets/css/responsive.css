@@ -41,7 +41,7 @@
 @media only screen and (max-width: 720px) {
     .sponsors {
         width: 100vw;
-        height: 150px;
+        height: 10px;
         background-image: linear-gradient(transparent, black);
         display: flex;
         flex-direction: row;
