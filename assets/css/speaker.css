@@ -23,6 +23,17 @@
     }
 }
 
+.speaker-ach-cont {
+    position: relative;
+    width: 100%;
+}
+
+.speaker-ach {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
 .speaker-title-links {
     display: flex;
     flex-direction: row;
