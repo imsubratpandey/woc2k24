@@ -1,623 +1,948 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WoC 2024 | MNNIT</title>
-    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
-    <link rel="stylesheet" type="text/css" href="assets/css/welcome.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/carousel.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/timer.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/about.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/footer.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/sponsors.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/popup.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/eventinfo.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/speaker.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/schedule.css">
-    <link rel="stylesheet" type="text/css" href="assets/css/benefit.css">
-    <link rel="stylesheet" href="./assets/css/background.css">
-    <link rel="stylesheet" href="./assets/css/animate.css">
-    <link rel="stylesheet" href="./assets/css/foganimation.css">
+    <link rel="icon" type="image/x-icon" href="assets/img/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="assets/css/welcome.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/carousel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/timer.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/about.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/footer.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/sponsors.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/popup.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/responsive.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/eventinfo.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/speaker.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/schedule.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/benefit.css" />
+    <link rel="stylesheet" href="./assets/css/background.css" />
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+    <link rel="stylesheet" href="./assets/css/foganimation.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-</head>
+  </head>
 
-<body>
+  <body>
     <div class="main-content">
-        <div class="popup-container" onclick="hidePopup()">
-            <div class="popup">
-                <div class="popup-header">
-                    <span>WEEKEND OF CODE 2k24 REGISTRATION</span>
-                    <button class="close-button" onclick="hidePopup()">×</button>
-                </div>
-                <hr>
-                <div class="popup-content">
-                    <br>
-                    <h3>Rules and Regulations</h3>
-                    <br>
-                    <ul>
-                        <li> Two events - <span class="bold-sans">DevJam</span> and <span
-                                class="bold-sans">CodeStart</span> -
-                            will be conducted under <span class="bold-sans">Weekend of Code 2k24</span>.</li>
-                        <li> It is upto you whether you want to register in both
-                            the events or any single event.</li>
-                        <li> No two teams should have same members.</li>
-                        <li> Inter-branch (<span class="bold-sans">B.Tech</span>) teams are <span
-                                class="bold-sans">allowed</span>.
-                        </li>
-                        <li> All the members of team must be from <span class="bold-sans">same year</span>.</li>
-                        <li> All the members of team must be from <span class="bold-sans">same course</span> (either
-                            <span class="bold-sans">B.Tech</span> or <span class="bold-sans">MCA</span>).
-                        </li>
-                        <li> You can create different teams for both the events.
-                        </li>
-                        <li><span class="bold-sans">Deadline</span> for registration is - <span class="bold-sans">4th
-                                April 2024 11:59PM</span>.</li>
-                        <li><span class="bold-sans">Weekend of Code 2k24</span> is scheduled
-                            from <span class="bold-sans">6th April</span> - <span class="bold-sans">12th April
-                                2024</span>.</li>
-                        <li> Click on the following buttons to proceed with your
-                            registration.</li>
-                    </ul>
-                </div>
-                <div class="popup-buttons">
-                    <button class="cancel-button">DEVJAM</button>
-                    <button class="ok-button">CODESTART</button>
-                </div>
-            </div>
-        </div>
-        <nav class="nav-main">
-            <div class="btn-toggle-nav" onclick="toggleNav()"></div>
-        </nav>
-        <aside class="nav-sidebar">
+      <div class="popup-container" onclick="hidePopup()">
+        <div class="popup">
+          <div class="popup-header">
+            <span>WEEKEND OF CODE 2k24 REGISTRATION</span>
+            <button class="close-button" onclick="hidePopup()">×</button>
+          </div>
+          <hr />
+          <div class="popup-content">
+            <br />
+            <h3>Rules and Regulations</h3>
+            <br />
             <ul>
-                <li><span></span></li>
-                <li><a onclick="scrollToHome(); toggleNav();">HOME</a></li>
-                <li><a onclick="scrollToAbout(); toggleNav();">ABOUT</a></li>
-                <li><a onclick="scrollToSchedule(); toggleNav();">SCHEDULE</a></li>
-                <!-- <li><a onclick="scrollToSponsors(); toggleNav();">SPONSORS</a></li> -->
-                <li><a onclick="scrollToContact(); toggleNav();">CONTACTS</a></li>
+              <li>
+                Two events - <span class="bold-sans">DevJam</span> and
+                <span class="bold-sans">CodeStart</span> - will be conducted
+                under <span class="bold-sans">Weekend of Code 2k24</span>.
+              </li>
+              <li>
+                It is upto you whether you want to register in both the events
+                or any single event.
+              </li>
+              <li>No two teams should have same members.</li>
+              <li>
+                Inter-branch (<span class="bold-sans">B.Tech</span>) teams are
+                <span class="bold-sans">allowed</span>.
+              </li>
+              <li>
+                All the members of team must be from
+                <span class="bold-sans">same year</span>.
+              </li>
+              <li>
+                All the members of team must be from
+                <span class="bold-sans">same course</span> (either
+                <span class="bold-sans">B.Tech</span> or
+                <span class="bold-sans">MCA</span>).
+              </li>
+              <li>You can create different teams for both the events.</li>
+              <li>
+                <span class="bold-sans">Deadline</span> for registration is -
+                <span class="bold-sans">4th April 2024 11:59PM</span>.
+              </li>
+              <li>
+                <span class="bold-sans">Weekend of Code 2k24</span> is scheduled
+                from <span class="bold-sans">6th April</span> -
+                <span class="bold-sans">12th April 2024</span>.
+              </li>
+              <li>
+                Click on the following buttons to proceed with your
+                registration.
+              </li>
             </ul>
-        </aside>
-        <div class="navbar">
-            <img src="./assets/img/logo-woc.png" alt="WoC" onclick="scrollToHome()">
-            <ul class="nav-items">
-                <li>
-                    <a onclick="scrollToHome()">HOME</a>
-                </li>
-                <li>
-                    <a onclick="scrollToAbout()">ABOUT</a>
-                </li>
-                <li>
-                    <a onclick="scrollToSchedule()">SCHEDULE</a>
-                </li>
-                <!-- <li>
+          </div>
+          <div class="popup-buttons">
+            <button class="cancel-button">
+              <a
+                href="https://forms.gle/k79gUUn7X1boFtiaA"
+                target="_blank"
+                rel="noopener"
+                >DEVJAM
+              </a>
+            </button>
+            <button class="ok-button">
+              <a
+                href="https://forms.gle/SMccRQja4j2Jkt1Y9"
+                target="_blank"
+                rel="noopener"
+                >CODESTART
+              </a>
+            </button>
+          </div>
+        </div>
+      </div>
+      <nav class="nav-main">
+        <div class="btn-toggle-nav" onclick="toggleNav()"></div>
+      </nav>
+      <aside class="nav-sidebar">
+        <ul>
+          <li><span></span></li>
+          <li><a onclick="scrollToHome(); toggleNav();">HOME</a></li>
+          <li><a onclick="scrollToAbout(); toggleNav();">ABOUT</a></li>
+          <li><a onclick="scrollToSchedule(); toggleNav();">SCHEDULE</a></li>
+          <!-- <li><a onclick="scrollToSponsors(); toggleNav();">SPONSORS</a></li> -->
+          <li><a onclick="scrollToContact(); toggleNav();">CONTACTS</a></li>
+        </ul>
+      </aside>
+      <div class="navbar">
+        <img
+          src="./assets/img/logo-woc.png"
+          alt="WoC"
+          onclick="scrollToHome()"
+        />
+        <ul class="nav-items">
+          <li>
+            <a onclick="scrollToHome()">HOME</a>
+          </li>
+          <li>
+            <a onclick="scrollToAbout()">ABOUT</a>
+          </li>
+          <li>
+            <a onclick="scrollToSchedule()">SCHEDULE</a>
+          </li>
+          <!-- <li>
                     <a onclick="scrollToSponsors()">SPONSORS</a>
                 </li> -->
-                <li>
-                    <a onclick="scrollToContact()">CONTACTS</a>
-                </li>
-            </ul>
+          <li>
+            <a onclick="scrollToContact()">CONTACTS</a>
+          </li>
+        </ul>
+      </div>
+      <div class="welcome-box" id="welcome-box-id">
+        <div class="images-cover">
+          <img src="./assets/img/ironman2.jpg" alt="none" />
+          <img src="./assets/img/captainamerica.jpg" alt="none" />
+          <img src="./assets/img/thor.jpg" alt="none" />
+          <img src="./assets/img/hulk2.jpg" alt="none" />
         </div>
-        <div class="welcome-box" id="welcome-box-id">
-            <div class="images-cover">
-                <img src="./assets/img/ironman2.jpg" alt="none">
-                <img src="./assets/img/captainamerica.jpg" alt="none">
-                <img src="./assets/img/thor.jpg" alt="none">
-                <img src="./assets/img/hulk2.jpg" alt="none">
-            </div>
-            <div class="fogwrapper">
-                <div id="foglayer_01" class="fog">
-                    <div class="image01"></div>
-                    <div class="image02"></div>
-                </div>
-                <div id="foglayer_02" class="fog">
-                    <div class="image01"></div>
-                    <div class="image02"></div>
-                </div>
-                <div id="foglayer_03" class="fog">
-                    <div class="image01"></div>
-                    <div class="image02"></div>
-                </div>
-            </div>
-            <div class="color-cover">
-            </div>
-            <input class="retrigger" type="radio" name="rerun" id="retrigger--1" /><input class="retrigger" type="radio"
-                name="rerun" id="retrigger--2" checked="checked" />
-            <div class="bg">
-                <div class="color-cover-2">
-                </div>
-            </div>
-            <div class="pane">
-                <div class="rotate">
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="logo-static">WEEKEND&nbsp;OF&nbsp;CODE</div>
-                    <div class="static-logo text1">
-                        HELLO THERE
-                    </div>
-                    <div class="static-items">
-                        <div class="event-title text1">DevJam+CodeStart</div>
-                        <div class="register-container">
-                            <div class="register-cover"></div>
-                            <div class="register-main" onclick="showPopup()">Register</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+        <div class="fogwrapper">
+          <div id="foglayer_01" class="fog">
+            <div class="image01"></div>
+            <div class="image02"></div>
+          </div>
+          <div id="foglayer_02" class="fog">
+            <div class="image01"></div>
+            <div class="image02"></div>
+          </div>
+          <div id="foglayer_03" class="fog">
+            <div class="image01"></div>
+            <div class="image02"></div>
+          </div>
         </div>
-        <div class="timer-box panel" id="timer-box-id">
+        <div class="color-cover"></div>
+        <input
+          class="retrigger"
+          type="radio"
+          name="rerun"
+          id="retrigger--1"
+        /><input
+          class="retrigger"
+          type="radio"
+          name="rerun"
+          id="retrigger--2"
+          checked="checked"
+        />
+        <div class="bg">
+          <div class="color-cover-2"></div>
+        </div>
+        <div class="pane">
+          <div class="rotate">
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="logo-static">WEEKEND&nbsp;OF&nbsp;CODE</div>
+            <div class="static-logo text1">HELLO THERE</div>
+            <div class="static-items">
+              <div class="event-title text1">DevJam + CodeStart</div>
+              <div class="register-container">
+                <div class="register-cover"></div>
+                <div class="register-main" onclick="showPopup()">
+                  Register Now
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="timer-box panel" id="timer-box-id">
+        <div
+          class="text-[#00352F] flex justify-center items-center min-h-screen p-4 transition-all duration-700 [--primary:#00352F] [--accent:#CEDC00] [--accent-border:#CEDC0050]"
+        >
+          <div class="w-full max-w-3xl m Xtext-center">
+            <h1
+              class="text-white/70 text-[clamp(2rem,8vw,6rem)] tracking-wide transition-all duration-700 uppercase"
+            >
+              WE ARE ABOUT TO BEGIN IN...
+            </h1>
             <div
-                class="text-[#00352F] flex justify-center items-center min-h-screen p-4 transition-all duration-700 [--primary:#00352F] [--accent:#CEDC00] [--accent-border:#CEDC0050] ">
-                <div class="w-full max-w-3xl m Xtext-center ">
-                    <h1
-                        class="text-white/70 text-[clamp(2rem,8vw,6rem)] tracking-wide transition-all duration-700 uppercase">
-                        WE ARE ABOUT TO BEGIN IN...</h1>
-                    <div data-color class="w-full grid grid-cols-2 min-[500px]:grid-cols-4 items-center justify-center gap-2 sm:gap-4 sm:gap-4 text-[var(--accent)] font-thin text-5xl 
-                      *:bg-black/60
-                      *:ring-4
-                      *:ring-black/5
-                      *:aspect-square
-                      *:px-8
-                      
-                      sm:*:px-10 
-                      md:*:px-14
-  
-                      *:shadow-xl
-                      *:transition
-                      *:grid
-                      *:gap-1
-                      *:grid-cols-2
-                      *:items-center 
-                      *:justify-center                    
-                      *:overflow-hidden
-                      *:relative
-                      *:isolate
-                      *:border
-                      *:border-white/30
-  
-                      [&_span]:grid
-                      first:[&_span]:place-content-end
-                      last:[&_span]:place-content-start
-                      [&_span]:
-                      [&_span]:font-bold
-                      [&_span]:text-[4rem]
-                      min-[500px]:[&_span]:text-[6rem]
-                      [&_span]:text-[var(--accent)]
-                      [&_span]:duration-700
-                      [&_span]:transition-all
-                      [&_span]:ease-in-out
-                      
-                      after:*:absolute
-                      after:*:font-thin
-                      after:*:content-[attr(data-desc)]
-                      after:*:bottom-1
-                      sm:after:*:-bottom-3
-                      after:*:left-6
-                      after:*:text-left
-                      after:*:text-2xl
-                      sm:after:*:text-4xl
-                      after:*:uppercase
-                      after:*:text-white/50
-                      sm:after:*:-rotate-90
-                      after:*:origin-left
-                      after:*:opacity-50 
-                      after:*:tracking-wider
-  
-                      before:*:absolute
-                      before:*:-inset-2/4
-                      before:*:rounded-full
-                      before:*:bg-black/20 
-                      before:*:-z-10
-                  ">
-                        <div id="days" data-desc="Days" class="animate-in " style="--d:1500ms">
-                            <span>2</span>
-                            <span>0</span>
-                        </div>
-                        <div id="hours" data-desc="Hours" class="animate-in " style="--d:1200ms">
-                            <span>2</span>
-                            <span>3</span>
-                        </div>
-                        <div id="minutes" data-desc="Minutes" class="animate-in " style="--d:800ms">
-                            <span>1</span>
-                            <span>2</span>
-                        </div>
+              data-color
+              class="w-full grid grid-cols-2 min-[500px]:grid-cols-4 items-center justify-center gap-2 sm:gap-4 sm:gap-4 text-[var(--accent)] font-thin text-5xl *:bg-black/60 *:ring-4 *:ring-black/5 *:aspect-square *:px-8 sm:*:px-10 md:*:px-14 *:shadow-xl *:transition *:grid *:gap-1 *:grid-cols-2 *:items-center *:justify-center *:overflow-hidden *:relative *:isolate *:border *:border-white/30 [&_span]:grid first:[&_span]:place-content-end last:[&_span]:place-content-start [&_span]: [&_span]:font-bold [&_span]:text-[4rem] min-[500px]:[&_span]:text-[6rem] [&_span]:text-[var(--accent)] [&_span]:duration-700 [&_span]:transition-all [&_span]:ease-in-out after:*:absolute after:*:font-thin after:*:content-[attr(data-desc)] after:*:bottom-1 sm:after:*:-bottom-3 after:*:left-6 after:*:text-left after:*:text-2xl sm:after:*:text-4xl after:*:uppercase after:*:text-white/50 sm:after:*:-rotate-90 after:*:origin-left after:*:opacity-50 after:*:tracking-wider before:*:absolute before:*:-inset-2/4 before:*:rounded-full before:*:bg-black/20 before:*:-z-10"
+            >
+              <div
+                id="days"
+                data-desc="Days"
+                class="animate-in"
+                style="--d: 1500ms"
+              >
+                <span>2</span>
+                <span>0</span>
+              </div>
+              <div
+                id="hours"
+                data-desc="Hours"
+                class="animate-in"
+                style="--d: 1200ms"
+              >
+                <span>2</span>
+                <span>3</span>
+              </div>
+              <div
+                id="minutes"
+                data-desc="Minutes"
+                class="animate-in"
+                style="--d: 800ms"
+              >
+                <span>1</span>
+                <span>2</span>
+              </div>
 
-                        <div id="seconds" data-desc="seconds" class="animate-in " style="--d:500ms">
-                            <span>0</span>
-                            <span>1</span>
-                        </div>
-                    </div>
+              <div
+                id="seconds"
+                data-desc="seconds"
+                class="animate-in"
+                style="--d: 500ms"
+              >
+                <span>0</span>
+                <span>1</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about-event panel" id="about-event-id">
+        <div class="about-logo">
+          <img src="./assets/img/hologram.png" alt="" />
+        </div>
+        <div class="about-para">
+          <h2>About the Event</h2>
+          <p>
+            <span class="bold-sans">Weekend of Code</span>, the annual technical
+            event of MNNIT, Allahabad is up with its 2k24 edition! The
+            enthralling week long event consists of
+            <span class="bold-sans">DevJam</span> and
+            <span class="bold-sans">CodeStart</span>.
+            <span class="bold-sans">DevJam</span> aims at providing a glimpse of
+            the world of development to our freshmen while
+            <span class="bold-sans">CodeStart</span> is a coding event for our
+            freshmen and sophomores. The sole purpose of this event is to
+            provide participants with hands-on experience and exposure along
+            with proper guidance. Get ready for an adventurous journey of
+            learning, innovating and exploring new technologies.
+          </p>
+          <ul>
+            <li>Week dedicated to coding and development</li>
+            <li>Meet Developers and Coders from your batch</li>
+            <li>Get Inspired by Amazing Mentors</li>
+            <li>Make project in any language you want</li>
+            <li>
+              Test your coding skills with 5 hour insomaniac event
+              <span class="bold-sans">CodeStart</span>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="event-info panel" id="event-info-id">
+        <ul class="large-screen">
+          <li>
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 257.02 466.922 C 252.892 470.297 249.039 473.448 244.511 477.153 C 231.86 465.947 219.005 455.138 206.799 443.64 C 169.413 408.426 136.024 369.887 110.52 325.021 C 94.799 297.366 82.7 268.308 78.662 236.467 C 71.581 180.636 87.424 132.062 127.649 92.754 C 220.047 2.463 374.727 45.683 407.529 170.604 C 417.804 209.736 412.831 247.854 398.343 285.069 C 382.769 325.075 358.964 360.012 331.507 392.643 C 308.925 419.48 284.012 443.997 257.02 466.922 M 291.393 147.729 C 279.041 138.923 265.261 133.895 250.163 132.962 C 199.43 129.827 159.183 173.07 165.723 223.51 C 171.573 268.631 215.381 300.603 259.625 291.332 C 292.796 284.381 314.766 264.07 322.486 231.099 C 330.355 197.485 319.146 169.549 291.393 147.729 Z"
+              />
+            </svg>
+            MNNIT, Allahabad
+          </li>
+          <li>
+            <svg
+              viewBox="4.2549 8.0714 483.6102 452.0726"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 6.57 430.777 C 5.031 424.705 4.397 418.948 4.399 413.079 C 4.43 323.431 4.444 233.784 4.34 144.136 C 4.335 140.363 5.09 139.169 9.149 139.172 C 167.115 139.289 325.081 139.29 483.047 139.172 C 487.142 139.169 487.869 140.436 487.865 144.179 C 487.767 232.66 487.79 321.141 487.788 409.622 C 487.788 434.92 471.135 454.685 446.044 459.12 C 442.108 459.815 438.139 460.145 434.119 460.144 C 305.313 460.112 176.507 460.121 47.702 460.114 C 26.502 460.112 13.552 450.951 6.57 430.777 Z"
+              />
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 238.388 8.269 C 277.554 8.269 316.22 8.32 354.885 8.187 C 358.644 8.174 359.986 8.918 359.902 12.999 C 359.625 26.326 359.686 39.664 359.853 52.995 C 359.946 60.446 364.342 66.117 370.847 67.954 C 376.787 69.632 383.485 67.222 387.221 62.083 C 389.602 58.806 390.005 55.045 390.001 51.158 C 389.986 38.325 390.112 25.49 389.919 12.66 C 389.867 9.261 390.646 8.056 394.259 8.195 C 410.728 8.825 427.281 6.976 443.68 9.222 C 464.354 12.053 482.409 28.903 485.844 47.919 C 486.139 49.55 486.322 51.225 486.326 52.879 C 486.364 69.879 486.282 86.879 486.427 103.877 C 486.452 106.885 485.754 108.286 482.588 107.784 C 481.775 107.656 480.924 107.765 480.091 107.765 C 323.596 107.765 167.1 107.743 10.605 107.87 C 5.823 107.874 4.121 107.113 4.263 101.793 C 4.693 85.638 4.36 69.464 4.448 53.298 C 4.501 43.455 6.757 34.162 12.246 25.845 C 19.763 14.456 30.336 8.432 44.025 8.299 C 57.524 8.168 71.027 8.414 84.522 8.175 C 88.235 8.109 88.824 9.427 88.782 12.723 C 88.61 26.053 88.621 39.389 88.752 52.72 C 88.826 60.244 92.981 65.83 99.525 67.857 C 105.572 69.73 112.489 67.243 116.283 61.905 C 118.533 58.74 118.892 55.146 118.891 51.438 C 118.888 38.772 119.061 26.102 118.794 13.441 C 118.709 9.404 119.581 8.138 123.891 8.16 C 161.89 8.348 199.889 8.269 238.388 8.269 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 209.301 378.915 C 209.301 366.961 209.258 355.473 209.316 343.986 C 209.36 335.232 213.733 330.667 222.464 330.56 C 234.282 330.414 246.105 330.408 257.924 330.562 C 266.286 330.672 270.875 335.214 271.007 343.639 C 271.196 355.623 271.211 367.614 270.997 379.597 C 270.839 388.435 266.782 392.203 257.897 392.256 C 246.077 392.327 234.257 392.335 222.437 392.255 C 213.962 392.198 209.792 388.02 209.301 378.915 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 329.626 228.194 C 329.626 221.369 329.55 215.043 329.645 208.719 C 329.781 199.692 334.286 195.165 343.153 195.126 C 354.804 195.074 366.456 195.071 378.106 195.127 C 386.784 195.17 391.365 199.695 391.412 208.308 C 391.478 220.292 391.492 232.277 391.404 244.26 C 391.345 252.308 387.694 256.496 379.675 256.711 C 367.035 257.049 354.374 257.052 341.734 256.724 C 334.209 256.53 329.971 251.803 329.671 244.171 C 329.469 239.019 329.628 233.853 329.626 228.194 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 391.43 359.195 C 391.426 366.519 391.514 373.344 391.394 380.166 C 391.257 388.039 387.203 392.144 379.296 392.226 C 366.982 392.353 354.664 392.348 342.349 392.242 C 334.805 392.177 329.943 387.818 329.753 380.309 C 329.438 367.835 329.467 355.343 329.718 342.866 C 329.869 335.32 334.487 330.754 342.039 330.606 C 354.351 330.365 366.673 330.365 378.985 330.597 C 387.004 330.747 391.318 335.555 391.417 343.716 C 391.477 348.709 391.429 353.702 391.43 359.195 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 268.748 200.039 C 270.676 202.969 271.051 205.925 271.055 208.953 C 271.069 220.282 271.134 231.611 271.037 242.94 C 270.951 252.974 267.134 256.758 257.015 256.843 C 245.687 256.939 234.356 256.962 223.028 256.837 C 213.703 256.734 209.346 252.23 209.312 242.921 C 209.27 231.426 209.254 219.93 209.317 208.435 C 209.366 199.679 213.824 195.175 222.487 195.129 C 234.315 195.067 246.145 195.165 257.973 195.086 C 262.249 195.058 265.798 196.368 268.748 200.039 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 126.385 392.277 C 118.226 392.274 110.565 392.362 102.907 392.242 C 95.132 392.121 90.434 387.505 90.364 379.806 C 90.252 367.485 90.246 355.161 90.368 342.84 C 90.437 335.834 94.715 330.893 101.655 330.704 C 114.632 330.35 127.632 330.353 140.609 330.701 C 147.391 330.882 151.763 335.401 151.955 342.303 C 152.297 354.615 152.349 366.951 151.995 379.262 C 151.767 387.188 146.252 392.037 138.374 392.242 C 134.547 392.341 130.715 392.27 126.385 392.277 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 97.691 196.007 C 99.613 195.026 101.308 195.132 102.962 195.129 C 115.128 195.107 127.295 195.047 139.461 195.14 C 146.828 195.196 151.695 199.344 151.92 206.647 C 152.305 219.134 152.371 231.651 151.952 244.134 C 151.702 251.589 146.526 256.463 138.957 256.686 C 126.802 257.045 114.623 257.056 102.467 256.743 C 94.631 256.541 90.399 251.711 90.348 243.816 C 90.271 231.817 90.343 219.817 90.323 207.818 C 90.314 202.509 92.424 198.508 97.691 196.007 Z"
+              /></svg
+            >April 6th,2024 - April 12th,2024
+          </li>
+          <li>
+            <svg
+              viewBox="47.668 9.9791 359.3399 501.5216"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 285.423 27.361 C 317.384 49.35 333.624 79.549 333.989 117.895 C 334.356 156.384 334.276 194.88 334.019 233.371 C 333.667 285.955 298.493 328.545 247.318 338.869 C 189.429 350.548 131.537 310.356 122.202 252.059 C 121.172 245.623 120.589 239.165 120.583 232.665 C 120.549 194.506 120.464 156.347 120.593 118.188 C 120.747 72.237 147.331 32.891 189.524 17.209 C 222.819 4.835 254.858 8.425 285.423 27.361 Z"
+              />
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 379.302 351.459 C 346.386 392.785 304.204 417.325 252.101 424.421 C 248.838 424.866 248.521 426.283 248.529 428.95 C 248.595 449.442 248.75 469.937 248.476 490.425 C 248.28 505.116 234.43 514.858 220.696 510.421 C 211.768 507.536 206.141 499.638 206.096 489.443 C 206.007 469.618 205.957 449.79 206.16 429.966 C 206.201 425.977 205.101 424.917 201.07 424.255 C 129.282 412.465 78.735 373.089 49.504 306.518 C 44.547 295.228 50.03 282.882 61.113 278.408 C 72.415 273.845 84.141 278.979 89.222 291.025 C 101.63 320.44 121.173 343.829 148.248 360.726 C 226.02 409.262 328.292 377.227 364.485 293.016 C 367.672 285.601 371.988 279.62 380.15 277.56 C 388.442 275.468 395.737 277.622 401.433 284.001 C 407.281 290.551 408.488 298.228 405.243 306.335 C 398.781 322.477 390.144 337.406 379.302 351.459 Z"
+              /></svg
+            >30+ Mentors
+          </li>
+        </ul>
+        <ul class="small-screen">
+          <li>
+            <svg
+              viewBox="47.668 9.9791 359.3399 501.5216"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 285.423 27.361 C 317.384 49.35 333.624 79.549 333.989 117.895 C 334.356 156.384 334.276 194.88 334.019 233.371 C 333.667 285.955 298.493 328.545 247.318 338.869 C 189.429 350.548 131.537 310.356 122.202 252.059 C 121.172 245.623 120.589 239.165 120.583 232.665 C 120.549 194.506 120.464 156.347 120.593 118.188 C 120.747 72.237 147.331 32.891 189.524 17.209 C 222.819 4.835 254.858 8.425 285.423 27.361 Z"
+              />
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 379.302 351.459 C 346.386 392.785 304.204 417.325 252.101 424.421 C 248.838 424.866 248.521 426.283 248.529 428.95 C 248.595 449.442 248.75 469.937 248.476 490.425 C 248.28 505.116 234.43 514.858 220.696 510.421 C 211.768 507.536 206.141 499.638 206.096 489.443 C 206.007 469.618 205.957 449.79 206.16 429.966 C 206.201 425.977 205.101 424.917 201.07 424.255 C 129.282 412.465 78.735 373.089 49.504 306.518 C 44.547 295.228 50.03 282.882 61.113 278.408 C 72.415 273.845 84.141 278.979 89.222 291.025 C 101.63 320.44 121.173 343.829 148.248 360.726 C 226.02 409.262 328.292 377.227 364.485 293.016 C 367.672 285.601 371.988 279.62 380.15 277.56 C 388.442 275.468 395.737 277.622 401.433 284.001 C 407.281 290.551 408.488 298.228 405.243 306.335 C 398.781 322.477 390.144 337.406 379.302 351.459 Z"
+              /></svg
+            >30+ Mentors
+          </li>
+          <li>
+            <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 257.02 466.922 C 252.892 470.297 249.039 473.448 244.511 477.153 C 231.86 465.947 219.005 455.138 206.799 443.64 C 169.413 408.426 136.024 369.887 110.52 325.021 C 94.799 297.366 82.7 268.308 78.662 236.467 C 71.581 180.636 87.424 132.062 127.649 92.754 C 220.047 2.463 374.727 45.683 407.529 170.604 C 417.804 209.736 412.831 247.854 398.343 285.069 C 382.769 325.075 358.964 360.012 331.507 392.643 C 308.925 419.48 284.012 443.997 257.02 466.922 M 291.393 147.729 C 279.041 138.923 265.261 133.895 250.163 132.962 C 199.43 129.827 159.183 173.07 165.723 223.51 C 171.573 268.631 215.381 300.603 259.625 291.332 C 292.796 284.381 314.766 264.07 322.486 231.099 C 330.355 197.485 319.146 169.549 291.393 147.729 Z"
+              />
+            </svg>
+            MNNIT, Allahabad
+          </li>
+          <li>
+            <svg
+              viewBox="4.2549 8.0714 483.6102 452.0726"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 6.57 430.777 C 5.031 424.705 4.397 418.948 4.399 413.079 C 4.43 323.431 4.444 233.784 4.34 144.136 C 4.335 140.363 5.09 139.169 9.149 139.172 C 167.115 139.289 325.081 139.29 483.047 139.172 C 487.142 139.169 487.869 140.436 487.865 144.179 C 487.767 232.66 487.79 321.141 487.788 409.622 C 487.788 434.92 471.135 454.685 446.044 459.12 C 442.108 459.815 438.139 460.145 434.119 460.144 C 305.313 460.112 176.507 460.121 47.702 460.114 C 26.502 460.112 13.552 450.951 6.57 430.777 Z"
+              />
+              <path
+                opacity="1.000000"
+                stroke="none"
+                d="M 238.388 8.269 C 277.554 8.269 316.22 8.32 354.885 8.187 C 358.644 8.174 359.986 8.918 359.902 12.999 C 359.625 26.326 359.686 39.664 359.853 52.995 C 359.946 60.446 364.342 66.117 370.847 67.954 C 376.787 69.632 383.485 67.222 387.221 62.083 C 389.602 58.806 390.005 55.045 390.001 51.158 C 389.986 38.325 390.112 25.49 389.919 12.66 C 389.867 9.261 390.646 8.056 394.259 8.195 C 410.728 8.825 427.281 6.976 443.68 9.222 C 464.354 12.053 482.409 28.903 485.844 47.919 C 486.139 49.55 486.322 51.225 486.326 52.879 C 486.364 69.879 486.282 86.879 486.427 103.877 C 486.452 106.885 485.754 108.286 482.588 107.784 C 481.775 107.656 480.924 107.765 480.091 107.765 C 323.596 107.765 167.1 107.743 10.605 107.87 C 5.823 107.874 4.121 107.113 4.263 101.793 C 4.693 85.638 4.36 69.464 4.448 53.298 C 4.501 43.455 6.757 34.162 12.246 25.845 C 19.763 14.456 30.336 8.432 44.025 8.299 C 57.524 8.168 71.027 8.414 84.522 8.175 C 88.235 8.109 88.824 9.427 88.782 12.723 C 88.61 26.053 88.621 39.389 88.752 52.72 C 88.826 60.244 92.981 65.83 99.525 67.857 C 105.572 69.73 112.489 67.243 116.283 61.905 C 118.533 58.74 118.892 55.146 118.891 51.438 C 118.888 38.772 119.061 26.102 118.794 13.441 C 118.709 9.404 119.581 8.138 123.891 8.16 C 161.89 8.348 199.889 8.269 238.388 8.269 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 209.301 378.915 C 209.301 366.961 209.258 355.473 209.316 343.986 C 209.36 335.232 213.733 330.667 222.464 330.56 C 234.282 330.414 246.105 330.408 257.924 330.562 C 266.286 330.672 270.875 335.214 271.007 343.639 C 271.196 355.623 271.211 367.614 270.997 379.597 C 270.839 388.435 266.782 392.203 257.897 392.256 C 246.077 392.327 234.257 392.335 222.437 392.255 C 213.962 392.198 209.792 388.02 209.301 378.915 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 329.626 228.194 C 329.626 221.369 329.55 215.043 329.645 208.719 C 329.781 199.692 334.286 195.165 343.153 195.126 C 354.804 195.074 366.456 195.071 378.106 195.127 C 386.784 195.17 391.365 199.695 391.412 208.308 C 391.478 220.292 391.492 232.277 391.404 244.26 C 391.345 252.308 387.694 256.496 379.675 256.711 C 367.035 257.049 354.374 257.052 341.734 256.724 C 334.209 256.53 329.971 251.803 329.671 244.171 C 329.469 239.019 329.628 233.853 329.626 228.194 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 391.43 359.195 C 391.426 366.519 391.514 373.344 391.394 380.166 C 391.257 388.039 387.203 392.144 379.296 392.226 C 366.982 392.353 354.664 392.348 342.349 392.242 C 334.805 392.177 329.943 387.818 329.753 380.309 C 329.438 367.835 329.467 355.343 329.718 342.866 C 329.869 335.32 334.487 330.754 342.039 330.606 C 354.351 330.365 366.673 330.365 378.985 330.597 C 387.004 330.747 391.318 335.555 391.417 343.716 C 391.477 348.709 391.429 353.702 391.43 359.195 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 268.748 200.039 C 270.676 202.969 271.051 205.925 271.055 208.953 C 271.069 220.282 271.134 231.611 271.037 242.94 C 270.951 252.974 267.134 256.758 257.015 256.843 C 245.687 256.939 234.356 256.962 223.028 256.837 C 213.703 256.734 209.346 252.23 209.312 242.921 C 209.27 231.426 209.254 219.93 209.317 208.435 C 209.366 199.679 213.824 195.175 222.487 195.129 C 234.315 195.067 246.145 195.165 257.973 195.086 C 262.249 195.058 265.798 196.368 268.748 200.039 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 126.385 392.277 C 118.226 392.274 110.565 392.362 102.907 392.242 C 95.132 392.121 90.434 387.505 90.364 379.806 C 90.252 367.485 90.246 355.161 90.368 342.84 C 90.437 335.834 94.715 330.893 101.655 330.704 C 114.632 330.35 127.632 330.353 140.609 330.701 C 147.391 330.882 151.763 335.401 151.955 342.303 C 152.297 354.615 152.349 366.951 151.995 379.262 C 151.767 387.188 146.252 392.037 138.374 392.242 C 134.547 392.341 130.715 392.27 126.385 392.277 Z"
+              />
+              <path
+                fill="#000000"
+                opacity="1.000000"
+                stroke="none"
+                d="M 97.691 196.007 C 99.613 195.026 101.308 195.132 102.962 195.129 C 115.128 195.107 127.295 195.047 139.461 195.14 C 146.828 195.196 151.695 199.344 151.92 206.647 C 152.305 219.134 152.371 231.651 151.952 244.134 C 151.702 251.589 146.526 256.463 138.957 256.686 C 126.802 257.045 114.623 257.056 102.467 256.743 C 94.631 256.541 90.399 251.711 90.348 243.816 C 90.271 231.817 90.343 219.817 90.323 207.818 C 90.314 202.509 92.424 198.508 97.691 196.007 Z"
+              /></svg
+            >April 6th,2024 - April 12th,2024
+          </li>
+        </ul>
+      </div>
+      <div class="speaker panel" id="speaker-id">
+        <h2>SPEAKER</h2>
+        <div class="speaker-info">
+          <div class="speaker-ach-cont">
+            <img src="./assets/img/mittal.jpeg" alt="" />
+            <div class="speaker-ach">
+              <div class="container-carousel">
+                <div class="inner-carousel">
+                  <div id="one-carousel" class="item-carousel first-carousel">
+                    4 Times Institute Gold medalist
+                  </div>
+                  <div id="two-carousel" class="item-carousel second-carousel">
+                    SWE at Goldman Sachs
+                  </div>
+                  <div id="three-carousel" class="item-carousel third-carousel">
+                    Youtuber with 34K+ Subscribers
+                  </div>
+                  <div id="four-carousel" class="item-carousel fourth-carousel">
+                    SWE at Goldman Sachs
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="about-event panel" id="about-event-id">
-            <div class="about-logo">
-                <img src="./assets/img/hologram.png" alt="">
+          </div>
+          <div class="speaker-title-links">
+            <h1>Aryan Mittal</h1>
+            <div class="speaker-links">
+              <a href="https://instagram.com/ez.pz.dsa" target="_blank"
+                ><svg
+                  class="speaker-links-svgs"
+                  viewBox="-28.9826 -32.5601 512.2943 512.1418"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 152.158 468.346 C 103.883 453.166 63.562 426.584 31.207 388.204 C 0.14 351.351 -19.314 309.048 -26.096 261.256 C -35.876 192.343 -20.894 129.107 20.215 72.89 C 60.803 17.385 115.413 -16.75 183.317 -28.657 C 316.565 -52.022 442.059 31.956 474.193 157.939 C 497.237 248.286 476.448 329.21 413.611 398.246 C 374.692 441.004 325.634 466.488 268.626 476.07 C 229.425 482.659 190.654 479.916 152.158 468.346 M 313.815 81.141 C 311.391 80.571 308.989 79.63 306.541 79.491 C 287.61 78.409 268.67 76.689 249.733 76.684 C 217.772 76.677 185.738 76.684 153.87 78.766 C 127.344 80.5 106.153 93.527 92.497 117.051 C 84.732 130.427 81.366 145.233 81.099 160.525 C 80.495 195.166 80.245 229.817 80.216 264.464 C 80.207 275.267 81.004 286.107 82.06 296.868 C 85.695 333.907 111.412 362.1 148.049 367.24 C 166.59 369.842 185.553 370.223 204.325 370.219 C 236.287 370.21 268.341 370.38 300.184 368.086 C 329.321 365.987 351.531 350.986 364.426 323.949 C 370.169 311.906 372.723 298.977 372.925 285.748 C 373.45 251.437 373.754 217.121 373.771 182.807 C 373.777 171.837 373.001 160.827 371.905 149.904 C 368.501 115.958 347.072 90.518 313.815 81.141 Z"
+                  />
+                  <path
+                    fill="#010101"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 314.209 81.243 C 347.072 90.518 368.501 115.958 371.905 149.904 C 373.001 160.827 373.777 171.837 373.771 182.807 C 373.754 217.121 373.45 251.437 372.925 285.748 C 372.723 298.977 370.169 311.906 364.426 323.949 C 351.531 350.986 329.321 365.987 300.184 368.086 C 268.341 370.38 236.287 370.21 204.325 370.219 C 185.553 370.223 166.59 369.842 148.049 367.24 C 111.412 362.1 85.695 333.907 82.06 296.868 C 81.004 286.107 80.207 275.267 80.216 264.464 C 80.245 229.817 80.495 195.166 81.099 160.525 C 81.366 145.233 84.732 130.427 92.497 117.051 C 106.153 93.527 127.344 80.5 153.87 78.766 C 185.738 76.684 217.772 76.677 249.733 76.684 C 268.67 76.689 287.61 78.409 306.541 79.491 C 308.989 79.63 311.391 80.571 314.209 81.243 M 337.116 127.93 C 327.103 112.551 312.087 105.807 294.562 104.586 C 278.294 103.452 261.942 103.078 245.63 103.144 C 216.987 103.26 188.314 103.26 159.716 104.619 C 129.675 106.047 109.067 125.971 108.279 155.925 C 107.105 200.524 107.038 245.199 108.213 289.797 C 109.041 321.215 129.236 341.409 160.534 342.225 C 204.961 343.382 249.462 343.343 293.89 342.204 C 324.46 341.42 344.832 320.903 345.772 290.315 C 347.06 248.374 346.7 206.376 346.615 164.403 C 346.59 151.864 344.205 139.563 337.116 127.93 Z"
+                  />
+                  <path
+                    fill="#010101"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 337.324 128.231 C 344.205 139.563 346.59 151.864 346.615 164.403 C 346.7 206.376 347.06 248.374 345.772 290.315 C 344.832 320.903 324.46 341.42 293.89 342.204 C 249.462 343.343 204.961 343.382 160.534 342.225 C 129.236 341.409 109.041 321.215 108.213 289.797 C 107.038 245.199 107.105 200.524 108.279 155.925 C 109.067 125.971 129.675 106.047 159.716 104.619 C 188.314 103.26 216.987 103.26 245.63 103.144 C 261.942 103.078 278.294 103.452 294.562 104.586 C 312.087 105.807 327.103 112.551 337.324 128.231 M 177.516 166.451 C 153.389 188.612 145.258 220.234 156.125 249.636 C 166.788 278.488 193.603 297.65 224.966 298.831 C 271.589 300.586 309.716 257.302 301.611 211.819 C 291.119 152.945 224.458 128.214 177.516 166.451 M 304.635 127.411 C 292.658 128.767 285.305 139.027 288.545 149.86 C 291.152 158.578 299.614 163.857 308.581 162.361 C 317.287 160.909 323.546 152.803 323.009 143.676 C 322.477 134.649 315.366 128.042 304.635 127.411 Z"
+                  />
+                  <path
+                    fill="#F5F5F5"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 177.782 166.215 C 224.458 128.214 291.119 152.945 301.611 211.819 C 309.716 257.302 271.589 300.586 224.966 298.831 C 193.603 297.65 166.788 278.488 156.125 249.636 C 145.258 220.234 153.389 188.612 177.782 166.215 M 222.867 272.312 C 256.268 273.465 280.494 247.034 275.171 215.247 C 270.544 187.614 243.737 169.531 216.422 175.615 C 189.27 181.664 172.326 209.124 179.754 235.817 C 185.682 257.121 200.341 268.857 222.867 272.312 Z"
+                  />
+                  <path
+                    fill="#F4F4F4"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 305.063 127.405 C 315.366 128.042 322.477 134.649 323.009 143.676 C 323.546 152.803 317.287 160.909 308.581 162.361 C 299.614 163.857 291.152 158.578 288.545 149.86 C 285.305 139.027 292.658 128.767 305.063 127.405 Z"
+                  />
+                  <path
+                    fill="#010101"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 222.417 272.279 C 200.341 268.857 185.682 257.121 179.754 235.817 C 172.326 209.124 189.27 181.664 216.422 175.615 C 243.737 169.531 270.544 187.614 275.171 215.247 C 280.494 247.034 256.268 273.465 222.417 272.279 Z"
+                  /></svg
+              ></a>
+              <a href="https://www.youtube.com/@ARYANMITTAL" target="_blank">
+                <svg
+                  class="speaker-links-svgs"
+                  viewBox="-41.3837 -41.4683 511.8637 512.1514"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 206.602 470.574 C 89.545 467.31 -11.168 383.191 -35.636 268.637 C -63.436 138.48 12 9.458 138.946 -29.957 C 281.935 -74.354 433.124 14.015 464.671 160.426 C 493.904 296.102 410.031 430.401 275.427 463.339 C 252.995 468.828 230.194 471.244 206.602 470.574 M 293.003 310.919 C 325.993 313.106 350.632 288.052 349.518 254.415 C 348.603 226.78 349.393 199.09 349.314 171.424 C 349.226 140.642 327.691 118.606 297.008 118.486 C 242.01 118.271 187.011 118.271 132.013 118.486 C 101.322 118.606 79.785 140.641 79.706 171.415 C 79.631 200.247 79.559 229.081 79.8 257.912 C 79.848 263.661 80.599 269.616 82.26 275.102 C 89.013 297.405 108.244 310.861 133.01 310.895 C 186.008 310.97 239.007 310.919 293.003 310.919 Z"
+                  />
+                  <path
+                    fill="#010101"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 292.504 310.919 C 239.007 310.919 186.008 310.97 133.01 310.895 C 108.244 310.861 89.013 297.405 82.26 275.102 C 80.599 269.616 79.848 263.661 79.8 257.912 C 79.559 229.081 79.631 200.247 79.706 171.415 C 79.785 140.641 101.322 118.606 132.013 118.486 C 187.011 118.271 242.01 118.271 297.008 118.486 C 327.691 118.606 349.226 140.642 349.314 171.424 C 349.393 199.09 348.603 226.78 349.518 254.415 C 350.632 288.052 325.993 313.106 292.504 310.919 M 193.16 247.759 C 211.896 236.901 230.633 226.044 250.081 214.775 C 226.138 200.819 202.899 187.275 179.268 173.501 C 179.268 201.25 179.268 228.239 179.268 255.816 C 183.994 253.074 188.259 250.6 193.16 247.759 Z"
+                  />
+                  <path
+                    fill="#F6F6F6"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 192.842 247.942 C 188.259 250.6 183.994 253.074 179.268 255.816 C 179.268 228.239 179.268 201.25 179.268 173.501 C 202.899 187.275 226.138 200.819 250.081 214.775 C 230.633 226.044 211.896 236.901 192.842 247.942 Z"
+                  /></svg
+              ></a>
+              <a
+                href="https://linkedin.com/in/aryan-mittal-0077"
+                target="_blank"
+              >
+                <svg
+                  class="linkedin speaker-links-svgs"
+                  viewBox="-37.4306 -13.3556 511.8053 512.0616"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 147.486 488.675 C 85.877 470.147 37.562 434.332 2.824 380.645 C -20.564 344.499 -33.786 304.748 -36.78 261.757 C -45.129 141.868 27.554 34.974 142.175 -1.64 C 238.224 -32.321 346.466 -1.381 411.95 75.245 C 446.926 116.172 467.656 163.277 473.061 216.77 C 483.459 319.667 431.505 418.713 339.45 468.242 C 298.719 490.157 255.054 500.133 208.834 498.542 C 188.138 497.83 167.791 494.569 147.486 488.675 M 340.273 118.215 C 336.382 117.051 332.493 114.884 328.598 114.873 C 255.114 114.671 181.628 114.717 108.143 114.731 C 96.854 114.733 90.39 121.112 90.388 132.296 C 90.369 205.948 90.369 279.6 90.388 353.252 C 90.391 364.11 96.951 370.708 107.773 370.712 C 181.592 370.734 255.41 370.737 329.229 370.708 C 339.764 370.704 346.358 364.081 346.362 353.506 C 346.391 279.687 346.363 205.869 346.407 132.05 C 346.41 126.739 344.804 122.271 340.273 118.215 Z"
+                  />
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 340.552 118.46 C 344.804 122.271 346.41 126.739 346.407 132.05 C 346.363 205.869 346.391 279.687 346.362 353.506 C 346.358 364.081 339.764 370.704 329.229 370.708 C 255.41 370.737 181.592 370.734 107.773 370.712 C 96.951 370.708 90.391 364.11 90.388 353.252 C 90.369 279.6 90.369 205.948 90.388 132.296 C 90.39 121.112 96.854 114.733 108.143 114.731 C 181.628 114.717 255.114 114.671 328.598 114.873 C 332.493 114.884 336.382 117.051 340.552 118.46 M 306.378 272.224 C 306.376 265.062 306.449 257.899 306.356 250.738 C 306.113 232.141 293.777 216.298 276.229 211.93 C 255.383 206.741 235.632 214.43 226.391 231.962 C 226.391 224.492 226.391 217.797 226.391 210.924 C 212.908 210.924 199.843 210.924 186.733 210.924 C 186.733 250.962 186.733 290.8 186.733 330.371 C 200.159 330.371 213.227 330.371 226.378 330.371 C 226.378 309.536 226.189 289.051 226.509 268.574 C 226.591 263.361 227.627 257.938 229.374 253.02 C 234.283 239.202 245.88 234.962 259.048 241.525 C 263.979 243.983 266.507 247.477 266.46 253.301 C 266.264 277.45 266.378 301.602 266.378 325.753 C 266.378 327.347 266.378 328.94 266.378 330.426 C 280.048 330.426 293.114 330.426 306.378 330.426 C 306.378 311.16 306.378 292.192 306.378 272.224 M 170.377 247.224 C 170.377 235.129 170.377 223.033 170.377 211.017 C 156.728 211.017 143.658 211.017 130.667 211.017 C 130.667 251.041 130.667 290.771 130.667 330.431 C 144.027 330.431 157.097 330.431 170.377 330.431 C 170.377 302.834 170.377 275.529 170.377 247.224 M 126.514 173.769 C 126.78 174.9 127.005 176.042 127.318 177.16 C 130.916 190.017 144.102 197.392 156.972 193.756 C 169.72 190.156 177.081 176.797 173.384 163.97 C 170.102 152.582 158.44 145.088 146.865 146.929 C 134.299 148.928 126.258 159.153 126.514 173.769 Z"
+                  />
+                  <path
+                    fill="#000000"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 306.378 272.724 C 306.378 292.192 306.378 311.16 306.378 330.426 C 293.114 330.426 280.048 330.426 266.378 330.426 C 266.378 328.94 266.378 327.347 266.378 325.753 C 266.378 301.602 266.264 277.45 266.46 253.301 C 266.507 247.477 263.979 243.983 259.048 241.525 C 245.88 234.962 234.283 239.202 229.374 253.02 C 227.627 257.938 226.591 263.361 226.509 268.574 C 226.189 289.051 226.378 309.536 226.378 330.371 C 213.227 330.371 200.159 330.371 186.733 330.371 C 186.733 290.8 186.733 250.962 186.733 210.924 C 199.843 210.924 212.908 210.924 226.391 210.924 C 226.391 217.797 226.391 224.492 226.391 231.962 C 235.632 214.43 255.383 206.741 276.229 211.93 C 293.777 216.298 306.113 232.141 306.356 250.738 C 306.449 257.899 306.376 265.062 306.378 272.724 Z"
+                  />
+                  <path
+                    fill="#000000"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 170.377 247.724 C 170.377 275.529 170.377 302.834 170.377 330.431 C 157.097 330.431 144.027 330.431 130.667 330.431 C 130.667 290.771 130.667 251.041 130.667 211.017 C 143.658 211.017 156.728 211.017 170.377 211.017 C 170.377 223.033 170.377 235.129 170.377 247.724 Z"
+                  />
+                  <path
+                    fill="#020202"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 126.478 173.335 C 126.258 159.153 134.299 148.928 146.865 146.929 C 158.44 145.088 170.102 152.582 173.384 163.97 C 177.081 176.797 169.72 190.156 156.972 193.756 C 144.102 197.392 130.916 190.017 127.318 177.16 C 127.005 176.042 126.78 174.9 126.478 173.335 Z"
+                  /></svg
+              ></a>
             </div>
-            <div class="about-para">
-                <h2>About the Event</h2>
-                <p><span class="bold-sans">Weekend of Code</span>, the annual technical event of MNNIT, Allahabad is up
-                    with its 2k24
-                    edition! The enthralling week long
-                    event consists of <span class="bold-sans">DevJam</span> and <span
-                        class="bold-sans">CodeStart</span>. <span class="bold-sans">DevJam</span> aims at providing a
-                    glimpse of
-                    the world of development to our freshmen while <span class="bold-sans">CodeStart</span> is a coding
-                    event for our freshmen and sophomores. The sole purpose of this
-                    event is to provide participants with hands-on experience and exposure along with proper guidance.
-                    Get ready for an
-                    adventurous journey of learning, innovating and exploring new technologies.
-                </p>
-                <ul>
-                    <li>Week dedicated to coding and development</li>
-                    <li>Meet Developers and Coders from your batch</li>
-                    <li>Get Inspired by Amazing Mentors</li>
-                    <li>Make project in any language you want</li>
-                    <li>Test your coding skills with 5 hour insomaniac event
-                        <span class="bold-sans">CodeStart</span>
-                    </li>
-                </ul>
-            </div>
+          </div>
         </div>
-        <div class="event-info panel" id="event-info-id">
-            <ul class="large-screen">
-                <li>
-                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="1.000000" stroke="none"
-                            d="M 257.02 466.922 C 252.892 470.297 249.039 473.448 244.511 477.153 C 231.86 465.947 219.005 455.138 206.799 443.64 C 169.413 408.426 136.024 369.887 110.52 325.021 C 94.799 297.366 82.7 268.308 78.662 236.467 C 71.581 180.636 87.424 132.062 127.649 92.754 C 220.047 2.463 374.727 45.683 407.529 170.604 C 417.804 209.736 412.831 247.854 398.343 285.069 C 382.769 325.075 358.964 360.012 331.507 392.643 C 308.925 419.48 284.012 443.997 257.02 466.922 M 291.393 147.729 C 279.041 138.923 265.261 133.895 250.163 132.962 C 199.43 129.827 159.183 173.07 165.723 223.51 C 171.573 268.631 215.381 300.603 259.625 291.332 C 292.796 284.381 314.766 264.07 322.486 231.099 C 330.355 197.485 319.146 169.549 291.393 147.729 Z" />
-                    </svg> MNNIT, Allahabad
-                </li>
-                <li>
-                    <svg viewBox="4.2549 8.0714 483.6102 452.0726" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="1.000000" stroke="none"
-                            d="M 6.57 430.777 C 5.031 424.705 4.397 418.948 4.399 413.079 C 4.43 323.431 4.444 233.784 4.34 144.136 C 4.335 140.363 5.09 139.169 9.149 139.172 C 167.115 139.289 325.081 139.29 483.047 139.172 C 487.142 139.169 487.869 140.436 487.865 144.179 C 487.767 232.66 487.79 321.141 487.788 409.622 C 487.788 434.92 471.135 454.685 446.044 459.12 C 442.108 459.815 438.139 460.145 434.119 460.144 C 305.313 460.112 176.507 460.121 47.702 460.114 C 26.502 460.112 13.552 450.951 6.57 430.777 Z" />
-                        <path opacity="1.000000" stroke="none"
-                            d="M 238.388 8.269 C 277.554 8.269 316.22 8.32 354.885 8.187 C 358.644 8.174 359.986 8.918 359.902 12.999 C 359.625 26.326 359.686 39.664 359.853 52.995 C 359.946 60.446 364.342 66.117 370.847 67.954 C 376.787 69.632 383.485 67.222 387.221 62.083 C 389.602 58.806 390.005 55.045 390.001 51.158 C 389.986 38.325 390.112 25.49 389.919 12.66 C 389.867 9.261 390.646 8.056 394.259 8.195 C 410.728 8.825 427.281 6.976 443.68 9.222 C 464.354 12.053 482.409 28.903 485.844 47.919 C 486.139 49.55 486.322 51.225 486.326 52.879 C 486.364 69.879 486.282 86.879 486.427 103.877 C 486.452 106.885 485.754 108.286 482.588 107.784 C 481.775 107.656 480.924 107.765 480.091 107.765 C 323.596 107.765 167.1 107.743 10.605 107.87 C 5.823 107.874 4.121 107.113 4.263 101.793 C 4.693 85.638 4.36 69.464 4.448 53.298 C 4.501 43.455 6.757 34.162 12.246 25.845 C 19.763 14.456 30.336 8.432 44.025 8.299 C 57.524 8.168 71.027 8.414 84.522 8.175 C 88.235 8.109 88.824 9.427 88.782 12.723 C 88.61 26.053 88.621 39.389 88.752 52.72 C 88.826 60.244 92.981 65.83 99.525 67.857 C 105.572 69.73 112.489 67.243 116.283 61.905 C 118.533 58.74 118.892 55.146 118.891 51.438 C 118.888 38.772 119.061 26.102 118.794 13.441 C 118.709 9.404 119.581 8.138 123.891 8.16 C 161.89 8.348 199.889 8.269 238.388 8.269 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 209.301 378.915 C 209.301 366.961 209.258 355.473 209.316 343.986 C 209.36 335.232 213.733 330.667 222.464 330.56 C 234.282 330.414 246.105 330.408 257.924 330.562 C 266.286 330.672 270.875 335.214 271.007 343.639 C 271.196 355.623 271.211 367.614 270.997 379.597 C 270.839 388.435 266.782 392.203 257.897 392.256 C 246.077 392.327 234.257 392.335 222.437 392.255 C 213.962 392.198 209.792 388.02 209.301 378.915 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 329.626 228.194 C 329.626 221.369 329.55 215.043 329.645 208.719 C 329.781 199.692 334.286 195.165 343.153 195.126 C 354.804 195.074 366.456 195.071 378.106 195.127 C 386.784 195.17 391.365 199.695 391.412 208.308 C 391.478 220.292 391.492 232.277 391.404 244.26 C 391.345 252.308 387.694 256.496 379.675 256.711 C 367.035 257.049 354.374 257.052 341.734 256.724 C 334.209 256.53 329.971 251.803 329.671 244.171 C 329.469 239.019 329.628 233.853 329.626 228.194 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 391.43 359.195 C 391.426 366.519 391.514 373.344 391.394 380.166 C 391.257 388.039 387.203 392.144 379.296 392.226 C 366.982 392.353 354.664 392.348 342.349 392.242 C 334.805 392.177 329.943 387.818 329.753 380.309 C 329.438 367.835 329.467 355.343 329.718 342.866 C 329.869 335.32 334.487 330.754 342.039 330.606 C 354.351 330.365 366.673 330.365 378.985 330.597 C 387.004 330.747 391.318 335.555 391.417 343.716 C 391.477 348.709 391.429 353.702 391.43 359.195 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 268.748 200.039 C 270.676 202.969 271.051 205.925 271.055 208.953 C 271.069 220.282 271.134 231.611 271.037 242.94 C 270.951 252.974 267.134 256.758 257.015 256.843 C 245.687 256.939 234.356 256.962 223.028 256.837 C 213.703 256.734 209.346 252.23 209.312 242.921 C 209.27 231.426 209.254 219.93 209.317 208.435 C 209.366 199.679 213.824 195.175 222.487 195.129 C 234.315 195.067 246.145 195.165 257.973 195.086 C 262.249 195.058 265.798 196.368 268.748 200.039 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 126.385 392.277 C 118.226 392.274 110.565 392.362 102.907 392.242 C 95.132 392.121 90.434 387.505 90.364 379.806 C 90.252 367.485 90.246 355.161 90.368 342.84 C 90.437 335.834 94.715 330.893 101.655 330.704 C 114.632 330.35 127.632 330.353 140.609 330.701 C 147.391 330.882 151.763 335.401 151.955 342.303 C 152.297 354.615 152.349 366.951 151.995 379.262 C 151.767 387.188 146.252 392.037 138.374 392.242 C 134.547 392.341 130.715 392.27 126.385 392.277 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 97.691 196.007 C 99.613 195.026 101.308 195.132 102.962 195.129 C 115.128 195.107 127.295 195.047 139.461 195.14 C 146.828 195.196 151.695 199.344 151.92 206.647 C 152.305 219.134 152.371 231.651 151.952 244.134 C 151.702 251.589 146.526 256.463 138.957 256.686 C 126.802 257.045 114.623 257.056 102.467 256.743 C 94.631 256.541 90.399 251.711 90.348 243.816 C 90.271 231.817 90.343 219.817 90.323 207.818 C 90.314 202.509 92.424 198.508 97.691 196.007 Z" />
-                    </svg>April 6th,2024 - April 12th,2024
-                </li>
-                <li>
-                    <svg viewBox="47.668 9.9791 359.3399 501.5216" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="1.000000" stroke="none"
-                            d="M 285.423 27.361 C 317.384 49.35 333.624 79.549 333.989 117.895 C 334.356 156.384 334.276 194.88 334.019 233.371 C 333.667 285.955 298.493 328.545 247.318 338.869 C 189.429 350.548 131.537 310.356 122.202 252.059 C 121.172 245.623 120.589 239.165 120.583 232.665 C 120.549 194.506 120.464 156.347 120.593 118.188 C 120.747 72.237 147.331 32.891 189.524 17.209 C 222.819 4.835 254.858 8.425 285.423 27.361 Z" />
-                        <path opacity="1.000000" stroke="none"
-                            d="M 379.302 351.459 C 346.386 392.785 304.204 417.325 252.101 424.421 C 248.838 424.866 248.521 426.283 248.529 428.95 C 248.595 449.442 248.75 469.937 248.476 490.425 C 248.28 505.116 234.43 514.858 220.696 510.421 C 211.768 507.536 206.141 499.638 206.096 489.443 C 206.007 469.618 205.957 449.79 206.16 429.966 C 206.201 425.977 205.101 424.917 201.07 424.255 C 129.282 412.465 78.735 373.089 49.504 306.518 C 44.547 295.228 50.03 282.882 61.113 278.408 C 72.415 273.845 84.141 278.979 89.222 291.025 C 101.63 320.44 121.173 343.829 148.248 360.726 C 226.02 409.262 328.292 377.227 364.485 293.016 C 367.672 285.601 371.988 279.62 380.15 277.56 C 388.442 275.468 395.737 277.622 401.433 284.001 C 407.281 290.551 408.488 298.228 405.243 306.335 C 398.781 322.477 390.144 337.406 379.302 351.459 Z" />
-                    </svg>30+ Mentors
-                </li>
-            </ul>
-            <ul class="small-screen">
-                <li>
-                    <svg viewBox="47.668 9.9791 359.3399 501.5216" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="1.000000" stroke="none"
-                            d="M 285.423 27.361 C 317.384 49.35 333.624 79.549 333.989 117.895 C 334.356 156.384 334.276 194.88 334.019 233.371 C 333.667 285.955 298.493 328.545 247.318 338.869 C 189.429 350.548 131.537 310.356 122.202 252.059 C 121.172 245.623 120.589 239.165 120.583 232.665 C 120.549 194.506 120.464 156.347 120.593 118.188 C 120.747 72.237 147.331 32.891 189.524 17.209 C 222.819 4.835 254.858 8.425 285.423 27.361 Z" />
-                        <path opacity="1.000000" stroke="none"
-                            d="M 379.302 351.459 C 346.386 392.785 304.204 417.325 252.101 424.421 C 248.838 424.866 248.521 426.283 248.529 428.95 C 248.595 449.442 248.75 469.937 248.476 490.425 C 248.28 505.116 234.43 514.858 220.696 510.421 C 211.768 507.536 206.141 499.638 206.096 489.443 C 206.007 469.618 205.957 449.79 206.16 429.966 C 206.201 425.977 205.101 424.917 201.07 424.255 C 129.282 412.465 78.735 373.089 49.504 306.518 C 44.547 295.228 50.03 282.882 61.113 278.408 C 72.415 273.845 84.141 278.979 89.222 291.025 C 101.63 320.44 121.173 343.829 148.248 360.726 C 226.02 409.262 328.292 377.227 364.485 293.016 C 367.672 285.601 371.988 279.62 380.15 277.56 C 388.442 275.468 395.737 277.622 401.433 284.001 C 407.281 290.551 408.488 298.228 405.243 306.335 C 398.781 322.477 390.144 337.406 379.302 351.459 Z" />
-                    </svg>30+ Mentors
-                </li>
-                <li>
-                    <svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="1.000000" stroke="none"
-                            d="M 257.02 466.922 C 252.892 470.297 249.039 473.448 244.511 477.153 C 231.86 465.947 219.005 455.138 206.799 443.64 C 169.413 408.426 136.024 369.887 110.52 325.021 C 94.799 297.366 82.7 268.308 78.662 236.467 C 71.581 180.636 87.424 132.062 127.649 92.754 C 220.047 2.463 374.727 45.683 407.529 170.604 C 417.804 209.736 412.831 247.854 398.343 285.069 C 382.769 325.075 358.964 360.012 331.507 392.643 C 308.925 419.48 284.012 443.997 257.02 466.922 M 291.393 147.729 C 279.041 138.923 265.261 133.895 250.163 132.962 C 199.43 129.827 159.183 173.07 165.723 223.51 C 171.573 268.631 215.381 300.603 259.625 291.332 C 292.796 284.381 314.766 264.07 322.486 231.099 C 330.355 197.485 319.146 169.549 291.393 147.729 Z" />
-                    </svg> MNNIT, Allahabad
-                </li>
-                <li>
-                    <svg viewBox="4.2549 8.0714 483.6102 452.0726" xmlns="http://www.w3.org/2000/svg">
-                        <path opacity="1.000000" stroke="none"
-                            d="M 6.57 430.777 C 5.031 424.705 4.397 418.948 4.399 413.079 C 4.43 323.431 4.444 233.784 4.34 144.136 C 4.335 140.363 5.09 139.169 9.149 139.172 C 167.115 139.289 325.081 139.29 483.047 139.172 C 487.142 139.169 487.869 140.436 487.865 144.179 C 487.767 232.66 487.79 321.141 487.788 409.622 C 487.788 434.92 471.135 454.685 446.044 459.12 C 442.108 459.815 438.139 460.145 434.119 460.144 C 305.313 460.112 176.507 460.121 47.702 460.114 C 26.502 460.112 13.552 450.951 6.57 430.777 Z" />
-                        <path opacity="1.000000" stroke="none"
-                            d="M 238.388 8.269 C 277.554 8.269 316.22 8.32 354.885 8.187 C 358.644 8.174 359.986 8.918 359.902 12.999 C 359.625 26.326 359.686 39.664 359.853 52.995 C 359.946 60.446 364.342 66.117 370.847 67.954 C 376.787 69.632 383.485 67.222 387.221 62.083 C 389.602 58.806 390.005 55.045 390.001 51.158 C 389.986 38.325 390.112 25.49 389.919 12.66 C 389.867 9.261 390.646 8.056 394.259 8.195 C 410.728 8.825 427.281 6.976 443.68 9.222 C 464.354 12.053 482.409 28.903 485.844 47.919 C 486.139 49.55 486.322 51.225 486.326 52.879 C 486.364 69.879 486.282 86.879 486.427 103.877 C 486.452 106.885 485.754 108.286 482.588 107.784 C 481.775 107.656 480.924 107.765 480.091 107.765 C 323.596 107.765 167.1 107.743 10.605 107.87 C 5.823 107.874 4.121 107.113 4.263 101.793 C 4.693 85.638 4.36 69.464 4.448 53.298 C 4.501 43.455 6.757 34.162 12.246 25.845 C 19.763 14.456 30.336 8.432 44.025 8.299 C 57.524 8.168 71.027 8.414 84.522 8.175 C 88.235 8.109 88.824 9.427 88.782 12.723 C 88.61 26.053 88.621 39.389 88.752 52.72 C 88.826 60.244 92.981 65.83 99.525 67.857 C 105.572 69.73 112.489 67.243 116.283 61.905 C 118.533 58.74 118.892 55.146 118.891 51.438 C 118.888 38.772 119.061 26.102 118.794 13.441 C 118.709 9.404 119.581 8.138 123.891 8.16 C 161.89 8.348 199.889 8.269 238.388 8.269 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 209.301 378.915 C 209.301 366.961 209.258 355.473 209.316 343.986 C 209.36 335.232 213.733 330.667 222.464 330.56 C 234.282 330.414 246.105 330.408 257.924 330.562 C 266.286 330.672 270.875 335.214 271.007 343.639 C 271.196 355.623 271.211 367.614 270.997 379.597 C 270.839 388.435 266.782 392.203 257.897 392.256 C 246.077 392.327 234.257 392.335 222.437 392.255 C 213.962 392.198 209.792 388.02 209.301 378.915 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 329.626 228.194 C 329.626 221.369 329.55 215.043 329.645 208.719 C 329.781 199.692 334.286 195.165 343.153 195.126 C 354.804 195.074 366.456 195.071 378.106 195.127 C 386.784 195.17 391.365 199.695 391.412 208.308 C 391.478 220.292 391.492 232.277 391.404 244.26 C 391.345 252.308 387.694 256.496 379.675 256.711 C 367.035 257.049 354.374 257.052 341.734 256.724 C 334.209 256.53 329.971 251.803 329.671 244.171 C 329.469 239.019 329.628 233.853 329.626 228.194 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 391.43 359.195 C 391.426 366.519 391.514 373.344 391.394 380.166 C 391.257 388.039 387.203 392.144 379.296 392.226 C 366.982 392.353 354.664 392.348 342.349 392.242 C 334.805 392.177 329.943 387.818 329.753 380.309 C 329.438 367.835 329.467 355.343 329.718 342.866 C 329.869 335.32 334.487 330.754 342.039 330.606 C 354.351 330.365 366.673 330.365 378.985 330.597 C 387.004 330.747 391.318 335.555 391.417 343.716 C 391.477 348.709 391.429 353.702 391.43 359.195 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 268.748 200.039 C 270.676 202.969 271.051 205.925 271.055 208.953 C 271.069 220.282 271.134 231.611 271.037 242.94 C 270.951 252.974 267.134 256.758 257.015 256.843 C 245.687 256.939 234.356 256.962 223.028 256.837 C 213.703 256.734 209.346 252.23 209.312 242.921 C 209.27 231.426 209.254 219.93 209.317 208.435 C 209.366 199.679 213.824 195.175 222.487 195.129 C 234.315 195.067 246.145 195.165 257.973 195.086 C 262.249 195.058 265.798 196.368 268.748 200.039 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 126.385 392.277 C 118.226 392.274 110.565 392.362 102.907 392.242 C 95.132 392.121 90.434 387.505 90.364 379.806 C 90.252 367.485 90.246 355.161 90.368 342.84 C 90.437 335.834 94.715 330.893 101.655 330.704 C 114.632 330.35 127.632 330.353 140.609 330.701 C 147.391 330.882 151.763 335.401 151.955 342.303 C 152.297 354.615 152.349 366.951 151.995 379.262 C 151.767 387.188 146.252 392.037 138.374 392.242 C 134.547 392.341 130.715 392.27 126.385 392.277 Z" />
-                        <path fill="#000000" opacity="1.000000" stroke="none"
-                            d="M 97.691 196.007 C 99.613 195.026 101.308 195.132 102.962 195.129 C 115.128 195.107 127.295 195.047 139.461 195.14 C 146.828 195.196 151.695 199.344 151.92 206.647 C 152.305 219.134 152.371 231.651 151.952 244.134 C 151.702 251.589 146.526 256.463 138.957 256.686 C 126.802 257.045 114.623 257.056 102.467 256.743 C 94.631 256.541 90.399 251.711 90.348 243.816 C 90.271 231.817 90.343 219.817 90.323 207.818 C 90.314 202.509 92.424 198.508 97.691 196.007 Z" />
-                    </svg>April 6th,2024 - April 12th,2024
-                </li>
-            </ul>
-        </div>
-        <div class="speaker panel" id="speaker-id">
-            <h2>SPEAKER</h2>
-            <div class="speaker-info">
-                <div class="speaker-ach-cont">
-                    <img src="./assets/img/mittal.jpeg" alt="">
-                    <div class="speaker-ach">
-                        <div class="container-carousel">
-                            <div class="inner-carousel">
-                                <div id="one-carousel" class="item-carousel first-carousel">4 Times Institute Gold
-                                    medalist</div>
-                                <div id="two-carousel" class="item-carousel second-carousel">SWE at Goldman Sachs</div>
-                                <div id="three-carousel" class="item-carousel third-carousel">Youtuber with 34K+
-                                    Subscribers</div>
-                                <div id="four-carousel" class="item-carousel fourth-carousel">SWE at Goldman Sachs</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="speaker-title-links">
-                    <h1>Aryan Mittal</h1>
-                    <div class="speaker-links">
-                        <a href="https://instagram.com/ez.pz.dsa" target="_blank"><svg class="speaker-links-svgs"
-                                viewBox="-28.9826 -32.5601 512.2943 512.1418" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 152.158 468.346 C 103.883 453.166 63.562 426.584 31.207 388.204 C 0.14 351.351 -19.314 309.048 -26.096 261.256 C -35.876 192.343 -20.894 129.107 20.215 72.89 C 60.803 17.385 115.413 -16.75 183.317 -28.657 C 316.565 -52.022 442.059 31.956 474.193 157.939 C 497.237 248.286 476.448 329.21 413.611 398.246 C 374.692 441.004 325.634 466.488 268.626 476.07 C 229.425 482.659 190.654 479.916 152.158 468.346 M 313.815 81.141 C 311.391 80.571 308.989 79.63 306.541 79.491 C 287.61 78.409 268.67 76.689 249.733 76.684 C 217.772 76.677 185.738 76.684 153.87 78.766 C 127.344 80.5 106.153 93.527 92.497 117.051 C 84.732 130.427 81.366 145.233 81.099 160.525 C 80.495 195.166 80.245 229.817 80.216 264.464 C 80.207 275.267 81.004 286.107 82.06 296.868 C 85.695 333.907 111.412 362.1 148.049 367.24 C 166.59 369.842 185.553 370.223 204.325 370.219 C 236.287 370.21 268.341 370.38 300.184 368.086 C 329.321 365.987 351.531 350.986 364.426 323.949 C 370.169 311.906 372.723 298.977 372.925 285.748 C 373.45 251.437 373.754 217.121 373.771 182.807 C 373.777 171.837 373.001 160.827 371.905 149.904 C 368.501 115.958 347.072 90.518 313.815 81.141 Z" />
-                                <path fill="#010101" opacity="1.000000" stroke="none"
-                                    d="M 314.209 81.243 C 347.072 90.518 368.501 115.958 371.905 149.904 C 373.001 160.827 373.777 171.837 373.771 182.807 C 373.754 217.121 373.45 251.437 372.925 285.748 C 372.723 298.977 370.169 311.906 364.426 323.949 C 351.531 350.986 329.321 365.987 300.184 368.086 C 268.341 370.38 236.287 370.21 204.325 370.219 C 185.553 370.223 166.59 369.842 148.049 367.24 C 111.412 362.1 85.695 333.907 82.06 296.868 C 81.004 286.107 80.207 275.267 80.216 264.464 C 80.245 229.817 80.495 195.166 81.099 160.525 C 81.366 145.233 84.732 130.427 92.497 117.051 C 106.153 93.527 127.344 80.5 153.87 78.766 C 185.738 76.684 217.772 76.677 249.733 76.684 C 268.67 76.689 287.61 78.409 306.541 79.491 C 308.989 79.63 311.391 80.571 314.209 81.243 M 337.116 127.93 C 327.103 112.551 312.087 105.807 294.562 104.586 C 278.294 103.452 261.942 103.078 245.63 103.144 C 216.987 103.26 188.314 103.26 159.716 104.619 C 129.675 106.047 109.067 125.971 108.279 155.925 C 107.105 200.524 107.038 245.199 108.213 289.797 C 109.041 321.215 129.236 341.409 160.534 342.225 C 204.961 343.382 249.462 343.343 293.89 342.204 C 324.46 341.42 344.832 320.903 345.772 290.315 C 347.06 248.374 346.7 206.376 346.615 164.403 C 346.59 151.864 344.205 139.563 337.116 127.93 Z" />
-                                <path fill="#010101" opacity="1.000000" stroke="none"
-                                    d="M 337.324 128.231 C 344.205 139.563 346.59 151.864 346.615 164.403 C 346.7 206.376 347.06 248.374 345.772 290.315 C 344.832 320.903 324.46 341.42 293.89 342.204 C 249.462 343.343 204.961 343.382 160.534 342.225 C 129.236 341.409 109.041 321.215 108.213 289.797 C 107.038 245.199 107.105 200.524 108.279 155.925 C 109.067 125.971 129.675 106.047 159.716 104.619 C 188.314 103.26 216.987 103.26 245.63 103.144 C 261.942 103.078 278.294 103.452 294.562 104.586 C 312.087 105.807 327.103 112.551 337.324 128.231 M 177.516 166.451 C 153.389 188.612 145.258 220.234 156.125 249.636 C 166.788 278.488 193.603 297.65 224.966 298.831 C 271.589 300.586 309.716 257.302 301.611 211.819 C 291.119 152.945 224.458 128.214 177.516 166.451 M 304.635 127.411 C 292.658 128.767 285.305 139.027 288.545 149.86 C 291.152 158.578 299.614 163.857 308.581 162.361 C 317.287 160.909 323.546 152.803 323.009 143.676 C 322.477 134.649 315.366 128.042 304.635 127.411 Z" />
-                                <path fill="#F5F5F5" opacity="1.000000" stroke="none"
-                                    d="M 177.782 166.215 C 224.458 128.214 291.119 152.945 301.611 211.819 C 309.716 257.302 271.589 300.586 224.966 298.831 C 193.603 297.65 166.788 278.488 156.125 249.636 C 145.258 220.234 153.389 188.612 177.782 166.215 M 222.867 272.312 C 256.268 273.465 280.494 247.034 275.171 215.247 C 270.544 187.614 243.737 169.531 216.422 175.615 C 189.27 181.664 172.326 209.124 179.754 235.817 C 185.682 257.121 200.341 268.857 222.867 272.312 Z" />
-                                <path fill="#F4F4F4" opacity="1.000000" stroke="none"
-                                    d="M 305.063 127.405 C 315.366 128.042 322.477 134.649 323.009 143.676 C 323.546 152.803 317.287 160.909 308.581 162.361 C 299.614 163.857 291.152 158.578 288.545 149.86 C 285.305 139.027 292.658 128.767 305.063 127.405 Z" />
-                                <path fill="#010101" opacity="1.000000" stroke="none"
-                                    d="M 222.417 272.279 C 200.341 268.857 185.682 257.121 179.754 235.817 C 172.326 209.124 189.27 181.664 216.422 175.615 C 243.737 169.531 270.544 187.614 275.171 215.247 C 280.494 247.034 256.268 273.465 222.417 272.279 Z" />
-                            </svg></a>
-                        <a href="https://www.youtube.com/@ARYANMITTAL" target="_blank"> <svg class="speaker-links-svgs"
-                                viewBox="-41.3837 -41.4683 511.8637 512.1514" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 206.602 470.574 C 89.545 467.31 -11.168 383.191 -35.636 268.637 C -63.436 138.48 12 9.458 138.946 -29.957 C 281.935 -74.354 433.124 14.015 464.671 160.426 C 493.904 296.102 410.031 430.401 275.427 463.339 C 252.995 468.828 230.194 471.244 206.602 470.574 M 293.003 310.919 C 325.993 313.106 350.632 288.052 349.518 254.415 C 348.603 226.78 349.393 199.09 349.314 171.424 C 349.226 140.642 327.691 118.606 297.008 118.486 C 242.01 118.271 187.011 118.271 132.013 118.486 C 101.322 118.606 79.785 140.641 79.706 171.415 C 79.631 200.247 79.559 229.081 79.8 257.912 C 79.848 263.661 80.599 269.616 82.26 275.102 C 89.013 297.405 108.244 310.861 133.01 310.895 C 186.008 310.97 239.007 310.919 293.003 310.919 Z" />
-                                <path fill="#010101" opacity="1.000000" stroke="none"
-                                    d="M 292.504 310.919 C 239.007 310.919 186.008 310.97 133.01 310.895 C 108.244 310.861 89.013 297.405 82.26 275.102 C 80.599 269.616 79.848 263.661 79.8 257.912 C 79.559 229.081 79.631 200.247 79.706 171.415 C 79.785 140.641 101.322 118.606 132.013 118.486 C 187.011 118.271 242.01 118.271 297.008 118.486 C 327.691 118.606 349.226 140.642 349.314 171.424 C 349.393 199.09 348.603 226.78 349.518 254.415 C 350.632 288.052 325.993 313.106 292.504 310.919 M 193.16 247.759 C 211.896 236.901 230.633 226.044 250.081 214.775 C 226.138 200.819 202.899 187.275 179.268 173.501 C 179.268 201.25 179.268 228.239 179.268 255.816 C 183.994 253.074 188.259 250.6 193.16 247.759 Z" />
-                                <path fill="#F6F6F6" opacity="1.000000" stroke="none"
-                                    d="M 192.842 247.942 C 188.259 250.6 183.994 253.074 179.268 255.816 C 179.268 228.239 179.268 201.25 179.268 173.501 C 202.899 187.275 226.138 200.819 250.081 214.775 C 230.633 226.044 211.896 236.901 192.842 247.942 Z" />
-                            </svg></a>
-                        <a href="https://linkedin.com/in/aryan-mittal-0077" target="_blank">
-                            <svg class="linkedin speaker-links-svgs" viewBox="-37.4306 -13.3556 511.8053 512.0616"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 147.486 488.675 C 85.877 470.147 37.562 434.332 2.824 380.645 C -20.564 344.499 -33.786 304.748 -36.78 261.757 C -45.129 141.868 27.554 34.974 142.175 -1.64 C 238.224 -32.321 346.466 -1.381 411.95 75.245 C 446.926 116.172 467.656 163.277 473.061 216.77 C 483.459 319.667 431.505 418.713 339.45 468.242 C 298.719 490.157 255.054 500.133 208.834 498.542 C 188.138 497.83 167.791 494.569 147.486 488.675 M 340.273 118.215 C 336.382 117.051 332.493 114.884 328.598 114.873 C 255.114 114.671 181.628 114.717 108.143 114.731 C 96.854 114.733 90.39 121.112 90.388 132.296 C 90.369 205.948 90.369 279.6 90.388 353.252 C 90.391 364.11 96.951 370.708 107.773 370.712 C 181.592 370.734 255.41 370.737 329.229 370.708 C 339.764 370.704 346.358 364.081 346.362 353.506 C 346.391 279.687 346.363 205.869 346.407 132.05 C 346.41 126.739 344.804 122.271 340.273 118.215 Z" />
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 340.552 118.46 C 344.804 122.271 346.41 126.739 346.407 132.05 C 346.363 205.869 346.391 279.687 346.362 353.506 C 346.358 364.081 339.764 370.704 329.229 370.708 C 255.41 370.737 181.592 370.734 107.773 370.712 C 96.951 370.708 90.391 364.11 90.388 353.252 C 90.369 279.6 90.369 205.948 90.388 132.296 C 90.39 121.112 96.854 114.733 108.143 114.731 C 181.628 114.717 255.114 114.671 328.598 114.873 C 332.493 114.884 336.382 117.051 340.552 118.46 M 306.378 272.224 C 306.376 265.062 306.449 257.899 306.356 250.738 C 306.113 232.141 293.777 216.298 276.229 211.93 C 255.383 206.741 235.632 214.43 226.391 231.962 C 226.391 224.492 226.391 217.797 226.391 210.924 C 212.908 210.924 199.843 210.924 186.733 210.924 C 186.733 250.962 186.733 290.8 186.733 330.371 C 200.159 330.371 213.227 330.371 226.378 330.371 C 226.378 309.536 226.189 289.051 226.509 268.574 C 226.591 263.361 227.627 257.938 229.374 253.02 C 234.283 239.202 245.88 234.962 259.048 241.525 C 263.979 243.983 266.507 247.477 266.46 253.301 C 266.264 277.45 266.378 301.602 266.378 325.753 C 266.378 327.347 266.378 328.94 266.378 330.426 C 280.048 330.426 293.114 330.426 306.378 330.426 C 306.378 311.16 306.378 292.192 306.378 272.224 M 170.377 247.224 C 170.377 235.129 170.377 223.033 170.377 211.017 C 156.728 211.017 143.658 211.017 130.667 211.017 C 130.667 251.041 130.667 290.771 130.667 330.431 C 144.027 330.431 157.097 330.431 170.377 330.431 C 170.377 302.834 170.377 275.529 170.377 247.224 M 126.514 173.769 C 126.78 174.9 127.005 176.042 127.318 177.16 C 130.916 190.017 144.102 197.392 156.972 193.756 C 169.72 190.156 177.081 176.797 173.384 163.97 C 170.102 152.582 158.44 145.088 146.865 146.929 C 134.299 148.928 126.258 159.153 126.514 173.769 Z" />
-                                <path fill="#000000" opacity="1.000000" stroke="none"
-                                    d="M 306.378 272.724 C 306.378 292.192 306.378 311.16 306.378 330.426 C 293.114 330.426 280.048 330.426 266.378 330.426 C 266.378 328.94 266.378 327.347 266.378 325.753 C 266.378 301.602 266.264 277.45 266.46 253.301 C 266.507 247.477 263.979 243.983 259.048 241.525 C 245.88 234.962 234.283 239.202 229.374 253.02 C 227.627 257.938 226.591 263.361 226.509 268.574 C 226.189 289.051 226.378 309.536 226.378 330.371 C 213.227 330.371 200.159 330.371 186.733 330.371 C 186.733 290.8 186.733 250.962 186.733 210.924 C 199.843 210.924 212.908 210.924 226.391 210.924 C 226.391 217.797 226.391 224.492 226.391 231.962 C 235.632 214.43 255.383 206.741 276.229 211.93 C 293.777 216.298 306.113 232.141 306.356 250.738 C 306.449 257.899 306.376 265.062 306.378 272.724 Z" />
-                                <path fill="#000000" opacity="1.000000" stroke="none"
-                                    d="M 170.377 247.724 C 170.377 275.529 170.377 302.834 170.377 330.431 C 157.097 330.431 144.027 330.431 130.667 330.431 C 130.667 290.771 130.667 251.041 130.667 211.017 C 143.658 211.017 156.728 211.017 170.377 211.017 C 170.377 223.033 170.377 235.129 170.377 247.724 Z" />
-                                <path fill="#020202" opacity="1.000000" stroke="none"
-                                    d="M 126.478 173.335 C 126.258 159.153 134.299 148.928 146.865 146.929 C 158.44 145.088 170.102 152.582 173.384 163.97 C 177.081 176.797 169.72 190.156 156.972 193.756 C 144.102 197.392 130.916 190.017 127.318 177.16 C 127.005 176.042 126.78 174.9 126.478 173.335 Z" />
-                            </svg></a>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="benefit panel" id="benefit-id">
-            <h2>WHY SHOULD YOU JOIN</h2>
-            <p>Participating in WoC will go a long way towards developing your technical skills. This event will be a
-                great opportunity for freshmen to get started with developing and coding. You don't need any prior
-                knowledge to participate in this event (except zeal for learning!!) because your mentor will guide you
-                through every step. At the end of this event you will have a great project. Coding and developing skills
-                will also help you in getting an internship and placement. Don't miss out this opportunity and discover
-                the fun in coding and developing.
+      </div>
+      <div class="benefit panel" id="benefit-id">
+        <h2>WHY SHOULD YOU JOIN</h2>
+        <p>
+          Participating in WoC will go a long way towards developing your
+          technical skills. This event will be a great opportunity for freshmen
+          to get started with developing and coding. You don't need any prior
+          knowledge to participate in this event (except zeal for learning!!)
+          because your mentor will guide you through every step. At the end of
+          this event you will have a great project. Coding and developing skills
+          will also help you in getting an internship and placement. Don't miss
+          out this opportunity and discover the fun in coding and developing.
+        </p>
+        <div class="benefit-box">
+          <div class="benefit-single-item" id="b-s-i-1">
+            <!-- <img src="./assets/img/opensource.png" alt=""> -->
+            <h2>Introduction to Open Source</h2>
+            <p>
+              Get yourself introduced to Open Source Communities and be a part
+              of them. Feel proud to be a member of communities like GitHub,
+              Python Software Foundation, etc.
             </p>
-            <div class="benefit-box">
-                <div class="benefit-single-item" id="b-s-i-1">
-                    <!-- <img src="./assets/img/opensource.png" alt=""> -->
-                    <h2>Introduction to Open Source</h2>
-                    <p>Get yourself introduced to Open Source Communities and be a part of them. Feel proud to be a
-                        member of communities like GitHub, Python Software Foundation, etc.</p>
-                </div>
-                <div class="benefit-single-item" id="b-s-i-2">
-                    <h2>Intro to Competitive Programming</h2>
-                    <p>Get yourself introduced to Competitive Programming. Sharpen your competitive programming skills
-                        by competing against brightest minds of college.</p>
-                </div>
-                <div class="benefit-single-item" id="b-s-i-3">
-                    <h2>Projects for your Resume</h2>
-                    <p>Enhance your Resume with exciting projects developed under the guidance of the Mentors, having
-                        expertise in their respective fields of development.</p>
-                </div>
+          </div>
+          <div class="benefit-single-item" id="b-s-i-2">
+            <h2>Intro to Competitive Programming</h2>
+            <p>
+              Get yourself introduced to Competitive Programming. Sharpen your
+              competitive programming skills by competing against brightest
+              minds of college.
+            </p>
+          </div>
+          <div class="benefit-single-item" id="b-s-i-3">
+            <h2>Projects for your Resume</h2>
+            <p>
+              Enhance your Resume with exciting projects developed under the
+              guidance of the Mentors, having expertise in their respective
+              fields of development.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="schedule panel" id="schedule-id">
+        <h2>EVENTS TIMELINE</h2>
+        <ul class="timeline">
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans">Registration Starts</span></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">30th March 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                Registration for the event begins. (Deadline:
+                <span class="bold-sans">4th April 11:59 pm</span>)
+              </div>
             </div>
-        </div>
-        <div class="schedule panel" id="schedule-id">
-            <h2>EVENTS TIMELINE</h2>
-            <ul class="timeline">
-                <li>
-                    <div class="direction-r">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">Registration Starts</span></span>
-                            <span class="time-wrapper"><span class="time">30th March 2024</span></span>
-                        </div>
-                        <div class="desc">Registration for the event begins. (Deadline: <span class="bold-sans">4th
-                                April
-                                11:59 pm</span>)</div>
-                    </div>
-                </li>
-                <!-- Item 2 -->
-                <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">Abstract Submission Starts</span></span>
-                            <span class="time-wrapper"><span class="time">2nd April 2024</span></span>
-                        </div>
-                        <div class="desc">The submission of Abstract by the teams begins. (Deadline: <span
-                                class="bold-sans">4th April
-                                11:59 pm</span>)</div>
-                    </div>
-                </li>
-                <!-- Item 1 -->
-                <li>
-                    <div class="direction-r">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">Inauguration</span></span>
-                            <span class="time-wrapper"><span class="time">6th April 2024</span></span>
-                        </div>
-                        <div class="desc">Inauguration of the Event in the Afternoon.</div>
-                    </div>
-                </li>
+          </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans"
+                    >Abstract Submission Starts</span
+                  ></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">2nd April 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                The submission of Abstract by the teams begins. (Deadline:
+                <span class="bold-sans">4th April 11:59 pm</span>)
+              </div>
+            </div>
+          </li>
+          <!-- Item 1 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans">Inauguration</span></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">6th April 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                Inauguration of the Event in the Afternoon.
+              </div>
+            </div>
+          </li>
 
-                <!-- Item 2 -->
-                <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">DevJam Week Starts</span></span>
-                            <span class="time-wrapper"><span class="time">6th April 2024</span></span>
-                        </div>
-                        <div class="desc">Finally the <span class="bold-sans">DevJam</span> week starts at 6:00 pm.
-                        </div>
-                    </div>
-                </li>
+          <!-- Item 2 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans">DevJam Week Starts</span></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">6th April 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                Finally the <span class="bold-sans">DevJam</span> week starts at
+                6:00 pm.
+              </div>
+            </div>
+          </li>
 
-                <!-- Item 3 -->
-                <li>
-                    <div class="direction-r">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">CodeStart 7.0</span></span>
-                            <span class="time-wrapper"><span class="time">7th April 2024</span></span>
-                        </div>
-                        <div class="desc"><span class="bold-sans">CodeStart</span> is here. It will be
-                            conducted from <span class="bold-sans">7th April 9:00 pm to 8th April 02:00 am</span>.</div>
-                    </div>
-                </li>
+          <!-- Item 3 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans">CodeStart 7.0</span></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">7th April 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                <span class="bold-sans">CodeStart</span> is here. It will be
+                conducted from
+                <span class="bold-sans"
+                  >7th April 9:00 pm to 8th April 02:00 am</span
+                >.
+              </div>
+            </div>
+          </li>
 
-                <!-- Item 4 -->
-                <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">Mid Term Evaluation</span></span>
-                            <span class="time-wrapper"><span class="time">9th April 2024</span></span>
-                        </div>
-                        <div class="desc">The midterm evaluation of <span class="bold-sans">DevJam</span> projects by
-                            the respective mentors of
-                            each team.</div>
-                    </div>
-                </li>
+          <!-- Item 4 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans">Mid Term Evaluation</span></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">9th April 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                The midterm evaluation of
+                <span class="bold-sans">DevJam</span> projects by the respective
+                mentors of each team.
+              </div>
+            </div>
+          </li>
 
-                <!-- Item 5 -->
-                <li>
-                    <div class="direction-r">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">Final submission of DevJam</span></span>
-                            <span class="time-wrapper"><span class="time">12th April 2024</span></span>
-                        </div>
-                        <div class="desc">Finally it's the day to submit all <span class="bold-sans">DevJam</span>
-                            Projects for Final Evaluation.
-                            Deadline is <span class="bold-sans">12th April 11:59 pm</span>.</div>
-                    </div>
-                </li>
+          <!-- Item 5 -->
+          <li>
+            <div class="direction-r">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans"
+                    >Final submission of DevJam</span
+                  ></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">12th April 2024</span></span
+                >
+              </div>
+              <div class="desc">
+                Finally it's the day to submit all
+                <span class="bold-sans">DevJam</span> Projects for Final
+                Evaluation. Deadline is
+                <span class="bold-sans">12th April 11:59 pm</span>.
+              </div>
+            </div>
+          </li>
 
-                <!-- Item 6 -->
-                <li>
-                    <div class="direction-l">
-                        <div class="flag-wrapper">
-                            <span class="hexa"></span>
-                            <span class="flag"><span class="bold-sans">Final Evaluation of DevJam</span></span>
-                            <span class="time-wrapper"><span class="time">13th April 2024</span></span>
-                        </div>
-                        <div class="desc">Judges will start evaluating the projects.</div>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <div class="sponsors panel" id="sponsors-id">
-            <!-- <div class="sponsor-by">
+          <!-- Item 6 -->
+          <li>
+            <div class="direction-l">
+              <div class="flag-wrapper">
+                <span class="hexa"></span>
+                <span class="flag"
+                  ><span class="bold-sans"
+                    >Final Evaluation of DevJam</span
+                  ></span
+                >
+                <span class="time-wrapper"
+                  ><span class="time">13th April 2024</span></span
+                >
+              </div>
+              <div class="desc">Judges will start evaluating the projects.</div>
+            </div>
+          </li>
+        </ul>
+      </div>
+      <div class="sponsors panel" id="sponsors-id">
+        <!-- <div class="sponsor-by">
                 <h1>Sponsored by</h1>
             </div>
             <div class="sponsor-img">
                 <img src="./assets/img/rosenfeld.png" alt="rosenfeld">
             </div> -->
-        </div>
-        <div class="footer panel" id="footer-id">
-            <footer id="footer">
-                <div class="col col1">
-                    <h3 class="footer-title">Weekend of Code</h3>
-                    <p>Made with <span style="color: #BA6573;">❤</span> by WebTeam, CC Club</p>
-                    <div class="social">
-                        <a href="mailto:weekend.of.code@gmail.com" target="_blank" class="link">
-                            <svg viewBox="-40.9099 -25.336 511.8831 512.5987" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 0.451 370.211 C -28.14 325.874 -42.435 277.598 -40.781 225.279 C -38.125 141.258 -2.572 73.712 64.811 23.607 C 110.352 -10.256 162.229 -25.832 218.948 -25.324 C 334.853 -24.288 437.824 58.286 464.072 171.242 C 494.435 301.912 422.222 432.669 294.373 473.68 C 204.481 502.516 121.872 485.042 48.719 425.032 C 29.796 409.508 14.035 391.014 0.451 370.211 M 61.741 171.198 C 61.741 216.526 61.725 261.854 61.749 307.182 C 61.759 326.171 72.882 337.379 91.786 337.385 C 173.943 337.41 256.1 337.41 338.257 337.385 C 357.165 337.38 368.305 326.192 368.321 307.188 C 368.359 260.526 368.337 213.865 368.318 167.204 C 368.317 165.127 368.103 163.05 367.96 160.471 C 366.149 161.559 364.891 162.288 363.659 163.057 C 317.792 191.653 271.882 220.181 226.108 248.924 C 218.407 253.76 211.623 253.715 203.906 248.864 C 158.007 220.008 111.952 191.401 65.94 162.725 C 64.778 162.001 63.512 161.444 61.741 160.52 C 61.741 164.235 61.741 167.229 61.741 171.198 M 234.493 76.678 C 229.41 73.515 224.178 70.564 219.301 67.111 C 216.304 64.989 214.172 64.973 210.983 66.979 C 175.795 89.11 140.486 111.047 105.213 133.043 C 91.883 141.356 78.564 149.688 64.229 158.643 C 165.188 158.643 264.916 158.643 365.935 158.643 C 321.606 131.003 278.356 104.035 234.493 76.678 Z" />
-                                <path fill="#F6F6F6" opacity="1.000000" stroke="none"
-                                    d="M 61.741 170.71 C 61.741 167.229 61.741 164.235 61.741 160.52 C 63.512 161.444 64.778 162.001 65.94 162.725 C 111.952 191.401 158.007 220.008 203.906 248.864 C 211.623 253.715 218.407 253.76 226.108 248.924 C 271.882 220.181 317.792 191.653 363.659 163.057 C 364.891 162.288 366.149 161.559 367.96 160.471 C 368.103 163.05 368.317 165.127 368.318 167.204 C 368.337 213.865 368.359 260.526 368.321 307.188 C 368.305 326.192 357.165 337.38 338.257 337.385 C 256.1 337.41 173.943 337.41 91.786 337.385 C 72.882 337.379 61.759 326.171 61.749 307.182 C 61.725 261.854 61.741 216.526 61.741 170.71 Z" />
-                                <path fill="#F6F6F6" opacity="1.000000" stroke="none"
-                                    d="M 234.799 76.873 C 278.356 104.035 321.606 131.003 365.935 158.643 C 264.916 158.643 165.188 158.643 64.229 158.643 C 78.564 149.688 91.883 141.356 105.213 133.043 C 140.486 111.047 175.795 89.11 210.983 66.979 C 214.172 64.973 216.304 64.989 219.301 67.111 C 224.178 70.564 229.41 73.515 234.799 76.873 Z" />
-                            </svg>
-                        </a>
-                        <a href="https://instagram.com/weekend.of.code.mnnit" target="_blank" class="link">
-                            <svg viewBox="-28.9826 -32.5601 512.2943 512.1418" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 152.158 468.346 C 103.883 453.166 63.562 426.584 31.207 388.204 C 0.14 351.351 -19.314 309.048 -26.096 261.256 C -35.876 192.343 -20.894 129.107 20.215 72.89 C 60.803 17.385 115.413 -16.75 183.317 -28.657 C 316.565 -52.022 442.059 31.956 474.193 157.939 C 497.237 248.286 476.448 329.21 413.611 398.246 C 374.692 441.004 325.634 466.488 268.626 476.07 C 229.425 482.659 190.654 479.916 152.158 468.346 M 313.815 81.141 C 311.391 80.571 308.989 79.63 306.541 79.491 C 287.61 78.409 268.67 76.689 249.733 76.684 C 217.772 76.677 185.738 76.684 153.87 78.766 C 127.344 80.5 106.153 93.527 92.497 117.051 C 84.732 130.427 81.366 145.233 81.099 160.525 C 80.495 195.166 80.245 229.817 80.216 264.464 C 80.207 275.267 81.004 286.107 82.06 296.868 C 85.695 333.907 111.412 362.1 148.049 367.24 C 166.59 369.842 185.553 370.223 204.325 370.219 C 236.287 370.21 268.341 370.38 300.184 368.086 C 329.321 365.987 351.531 350.986 364.426 323.949 C 370.169 311.906 372.723 298.977 372.925 285.748 C 373.45 251.437 373.754 217.121 373.771 182.807 C 373.777 171.837 373.001 160.827 371.905 149.904 C 368.501 115.958 347.072 90.518 313.815 81.141 Z" />
-                                <path fill="#F4F4F4" opacity="1.000000" stroke="none"
-                                    d="M 314.209 81.243 C 347.072 90.518 368.501 115.958 371.905 149.904 C 373.001 160.827 373.777 171.837 373.771 182.807 C 373.754 217.121 373.45 251.437 372.925 285.748 C 372.723 298.977 370.169 311.906 364.426 323.949 C 351.531 350.986 329.321 365.987 300.184 368.086 C 268.341 370.38 236.287 370.21 204.325 370.219 C 185.553 370.223 166.59 369.842 148.049 367.24 C 111.412 362.1 85.695 333.907 82.06 296.868 C 81.004 286.107 80.207 275.267 80.216 264.464 C 80.245 229.817 80.495 195.166 81.099 160.525 C 81.366 145.233 84.732 130.427 92.497 117.051 C 106.153 93.527 127.344 80.5 153.87 78.766 C 185.738 76.684 217.772 76.677 249.733 76.684 C 268.67 76.689 287.61 78.409 306.541 79.491 C 308.989 79.63 311.391 80.571 314.209 81.243 M 337.116 127.93 C 327.103 112.551 312.087 105.807 294.562 104.586 C 278.294 103.452 261.942 103.078 245.63 103.144 C 216.987 103.26 188.314 103.26 159.716 104.619 C 129.675 106.047 109.067 125.971 108.279 155.925 C 107.105 200.524 107.038 245.199 108.213 289.797 C 109.041 321.215 129.236 341.409 160.534 342.225 C 204.961 343.382 249.462 343.343 293.89 342.204 C 324.46 341.42 344.832 320.903 345.772 290.315 C 347.06 248.374 346.7 206.376 346.615 164.403 C 346.59 151.864 344.205 139.563 337.116 127.93 Z" />
-                                <path fill="#010101" opacity="1.000000" stroke="none"
-                                    d="M 337.324 128.231 C 344.205 139.563 346.59 151.864 346.615 164.403 C 346.7 206.376 347.06 248.374 345.772 290.315 C 344.832 320.903 324.46 341.42 293.89 342.204 C 249.462 343.343 204.961 343.382 160.534 342.225 C 129.236 341.409 109.041 321.215 108.213 289.797 C 107.038 245.199 107.105 200.524 108.279 155.925 C 109.067 125.971 129.675 106.047 159.716 104.619 C 188.314 103.26 216.987 103.26 245.63 103.144 C 261.942 103.078 278.294 103.452 294.562 104.586 C 312.087 105.807 327.103 112.551 337.324 128.231 M 177.516 166.451 C 153.389 188.612 145.258 220.234 156.125 249.636 C 166.788 278.488 193.603 297.65 224.966 298.831 C 271.589 300.586 309.716 257.302 301.611 211.819 C 291.119 152.945 224.458 128.214 177.516 166.451 M 304.635 127.411 C 292.658 128.767 285.305 139.027 288.545 149.86 C 291.152 158.578 299.614 163.857 308.581 162.361 C 317.287 160.909 323.546 152.803 323.009 143.676 C 322.477 134.649 315.366 128.042 304.635 127.411 Z" />
-                                <path fill="#F5F5F5" opacity="1.000000" stroke="none"
-                                    d="M 177.782 166.215 C 224.458 128.214 291.119 152.945 301.611 211.819 C 309.716 257.302 271.589 300.586 224.966 298.831 C 193.603 297.65 166.788 278.488 156.125 249.636 C 145.258 220.234 153.389 188.612 177.782 166.215 M 222.867 272.312 C 256.268 273.465 280.494 247.034 275.171 215.247 C 270.544 187.614 243.737 169.531 216.422 175.615 C 189.27 181.664 172.326 209.124 179.754 235.817 C 185.682 257.121 200.341 268.857 222.867 272.312 Z" />
-                                <path fill="#F4F4F4" opacity="1.000000" stroke="none"
-                                    d="M 305.063 127.405 C 315.366 128.042 322.477 134.649 323.009 143.676 C 323.546 152.803 317.287 160.909 308.581 162.361 C 299.614 163.857 291.152 158.578 288.545 149.86 C 285.305 139.027 292.658 128.767 305.063 127.405 Z" />
-                                <path fill="#010101" opacity="1.000000" stroke="none"
-                                    d="M 222.417 272.279 C 200.341 268.857 185.682 257.121 179.754 235.817 C 172.326 209.124 189.27 181.664 216.422 175.615 C 243.737 169.531 270.544 187.614 275.171 215.247 C 280.494 247.034 256.268 273.465 222.417 272.279 Z" />
-                            </svg>
-                        </a>
-                        <a href="https://discord.com/invite/M7dDGWKr" target="_blank" class="link">
-                            <svg viewBox="-46.237 -14.7922 511.9767 512.0618" xmlns="http://www.w3.org/2000/svg">
-                                <path fill="" opacity="1.000000" stroke="none"
-                                    d="M 153.014 490.974 C 97.065 477.674 50.642 449.456 13.812 405.848 C -17.176 369.157 -36.605 326.974 -43.333 279.36 C -53.851 204.919 -35.852 137.819 11.549 79.463 C 51.457 30.332 103.114 -0.23 165.708 -10.764 C 241.772 -23.564 310.615 -5.868 370.707 42.452 C 420.192 82.242 450.965 134.028 461.634 196.765 C 474.594 272.981 456.876 342.014 408.417 402.265 C 368.62 451.746 316.756 481.972 254.138 493.32 C 220.435 499.428 186.849 498.303 153.014 490.974 Z" />
-                                <path fill="#F6F6F6" opacity="1.000000" stroke="none"
-                                    d="M 96.643 117.155 C 115.573 109.559 134.786 104.377 154.41 100.583 C 156.87 100.108 158.05 100.777 159.059 102.923 C 161.321 107.728 163.896 112.388 166.102 117.217 C 167.077 119.351 168.019 120.072 170.568 119.708 C 196.612 115.986 222.693 116.048 248.734 119.703 C 251.555 120.098 252.535 119.166 253.534 116.941 C 255.642 112.247 258.005 107.668 260.184 103.005 C 261.14 100.959 262.241 100.079 264.797 100.555 C 289.082 105.076 312.51 112.305 335.096 122.299 C 337.137 123.201 338.657 124.446 339.932 126.351 C 368.025 168.332 386.282 214.06 392.466 264.356 C 395.179 286.417 395.322 308.546 393.549 330.7 C 393.306 333.737 392.28 335.804 389.678 337.671 C 363.269 356.623 334.562 370.943 303.729 381.157 C 300.184 382.331 298.479 381.567 296.519 378.609 C 291.096 370.426 286.014 362.058 281.16 353.526 C 279.371 350.382 280.218 349.332 283.184 348.237 C 290.827 345.415 298.192 341.929 305.252 337.868 C 306.888 336.927 310.019 336.929 309.475 333.91 C 309.051 331.555 302.749 329.013 300.428 330.006 C 292.181 333.535 283.867 336.86 275.284 339.518 C 222.523 355.852 170.872 352.525 120.43 330.438 C 115.331 328.205 112.965 330.933 110.142 333.437 C 108.28 335.087 110.368 335.841 111.634 336.571 C 119.418 341.057 127.458 345.041 135.874 348.17 C 139.266 349.431 139.6 350.737 137.862 353.888 C 133.037 362.637 127.852 371.134 122.165 379.347 C 120.634 381.558 119.404 382.313 116.537 381.389 C 85.123 371.261 56.056 356.557 29.226 337.352 C 26.936 335.713 26.085 333.851 25.858 331.163 C 19.573 256.72 38.081 188.765 79.116 126.637 C 82.202 121.964 87.418 121.526 91.677 119.184 C 93.123 118.389 94.736 117.898 96.643 117.155 Z" />
-                                <path fill="#020202" opacity="1.000000" stroke="none"
-                                    d="M 268.918 292.367 C 250.237 290.218 236.532 272.462 238.073 252.982 C 238.731 244.67 241.234 237.065 246.485 230.453 C 261.063 212.099 287.971 214.39 299.411 235.281 C 307.054 249.238 306.553 263.52 298.228 277.03 C 291.747 287.548 282.06 293.033 268.918 292.367 Z" />
-                                <path fill="#020202" opacity="1.000000" stroke="none"
-                                    d="M 147.776 292.451 C 128.28 291.244 113.744 273.515 115.157 253.278 C 115.738 244.948 118.186 237.344 123.378 230.693 C 137.814 212.202 164.787 214.215 176.318 235.014 C 184.435 249.657 183.655 264.503 174.343 278.409 C 168.26 287.491 159.458 292.462 147.776 292.451 Z" />
-                            </svg>
-                        </a>
-                    </div>
-                    <p style="color: #818181; font-size: smaller">2024 © All Rights Reserved</p>
-                </div>
-                <div class="col2">
-                    <img src="./assets/img/logo-woc.png" alt="">
-                </div>
-            </footer>
-        </div>
+      </div>
+      <div class="footer panel" id="footer-id">
+        <footer id="footer">
+          <div class="col col1">
+            <h3 class="footer-title">Weekend of Code</h3>
+            <p>
+              Made with <span style="color: #ba6573">❤</span> by WebTeam, CC
+              Club
+            </p>
+            <div class="social">
+              <a
+                href="mailto:weekend.of.code@gmail.com"
+                target="_blank"
+                class="link"
+              >
+                <svg
+                  viewBox="-40.9099 -25.336 511.8831 512.5987"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 0.451 370.211 C -28.14 325.874 -42.435 277.598 -40.781 225.279 C -38.125 141.258 -2.572 73.712 64.811 23.607 C 110.352 -10.256 162.229 -25.832 218.948 -25.324 C 334.853 -24.288 437.824 58.286 464.072 171.242 C 494.435 301.912 422.222 432.669 294.373 473.68 C 204.481 502.516 121.872 485.042 48.719 425.032 C 29.796 409.508 14.035 391.014 0.451 370.211 M 61.741 171.198 C 61.741 216.526 61.725 261.854 61.749 307.182 C 61.759 326.171 72.882 337.379 91.786 337.385 C 173.943 337.41 256.1 337.41 338.257 337.385 C 357.165 337.38 368.305 326.192 368.321 307.188 C 368.359 260.526 368.337 213.865 368.318 167.204 C 368.317 165.127 368.103 163.05 367.96 160.471 C 366.149 161.559 364.891 162.288 363.659 163.057 C 317.792 191.653 271.882 220.181 226.108 248.924 C 218.407 253.76 211.623 253.715 203.906 248.864 C 158.007 220.008 111.952 191.401 65.94 162.725 C 64.778 162.001 63.512 161.444 61.741 160.52 C 61.741 164.235 61.741 167.229 61.741 171.198 M 234.493 76.678 C 229.41 73.515 224.178 70.564 219.301 67.111 C 216.304 64.989 214.172 64.973 210.983 66.979 C 175.795 89.11 140.486 111.047 105.213 133.043 C 91.883 141.356 78.564 149.688 64.229 158.643 C 165.188 158.643 264.916 158.643 365.935 158.643 C 321.606 131.003 278.356 104.035 234.493 76.678 Z"
+                  />
+                  <path
+                    fill="#F6F6F6"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 61.741 170.71 C 61.741 167.229 61.741 164.235 61.741 160.52 C 63.512 161.444 64.778 162.001 65.94 162.725 C 111.952 191.401 158.007 220.008 203.906 248.864 C 211.623 253.715 218.407 253.76 226.108 248.924 C 271.882 220.181 317.792 191.653 363.659 163.057 C 364.891 162.288 366.149 161.559 367.96 160.471 C 368.103 163.05 368.317 165.127 368.318 167.204 C 368.337 213.865 368.359 260.526 368.321 307.188 C 368.305 326.192 357.165 337.38 338.257 337.385 C 256.1 337.41 173.943 337.41 91.786 337.385 C 72.882 337.379 61.759 326.171 61.749 307.182 C 61.725 261.854 61.741 216.526 61.741 170.71 Z"
+                  />
+                  <path
+                    fill="#F6F6F6"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 234.799 76.873 C 278.356 104.035 321.606 131.003 365.935 158.643 C 264.916 158.643 165.188 158.643 64.229 158.643 C 78.564 149.688 91.883 141.356 105.213 133.043 C 140.486 111.047 175.795 89.11 210.983 66.979 C 214.172 64.973 216.304 64.989 219.301 67.111 C 224.178 70.564 229.41 73.515 234.799 76.873 Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://instagram.com/weekend.of.code.mnnit"
+                target="_blank"
+                class="link"
+              >
+                <svg
+                  viewBox="-28.9826 -32.5601 512.2943 512.1418"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 152.158 468.346 C 103.883 453.166 63.562 426.584 31.207 388.204 C 0.14 351.351 -19.314 309.048 -26.096 261.256 C -35.876 192.343 -20.894 129.107 20.215 72.89 C 60.803 17.385 115.413 -16.75 183.317 -28.657 C 316.565 -52.022 442.059 31.956 474.193 157.939 C 497.237 248.286 476.448 329.21 413.611 398.246 C 374.692 441.004 325.634 466.488 268.626 476.07 C 229.425 482.659 190.654 479.916 152.158 468.346 M 313.815 81.141 C 311.391 80.571 308.989 79.63 306.541 79.491 C 287.61 78.409 268.67 76.689 249.733 76.684 C 217.772 76.677 185.738 76.684 153.87 78.766 C 127.344 80.5 106.153 93.527 92.497 117.051 C 84.732 130.427 81.366 145.233 81.099 160.525 C 80.495 195.166 80.245 229.817 80.216 264.464 C 80.207 275.267 81.004 286.107 82.06 296.868 C 85.695 333.907 111.412 362.1 148.049 367.24 C 166.59 369.842 185.553 370.223 204.325 370.219 C 236.287 370.21 268.341 370.38 300.184 368.086 C 329.321 365.987 351.531 350.986 364.426 323.949 C 370.169 311.906 372.723 298.977 372.925 285.748 C 373.45 251.437 373.754 217.121 373.771 182.807 C 373.777 171.837 373.001 160.827 371.905 149.904 C 368.501 115.958 347.072 90.518 313.815 81.141 Z"
+                  />
+                  <path
+                    fill="#F4F4F4"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 314.209 81.243 C 347.072 90.518 368.501 115.958 371.905 149.904 C 373.001 160.827 373.777 171.837 373.771 182.807 C 373.754 217.121 373.45 251.437 372.925 285.748 C 372.723 298.977 370.169 311.906 364.426 323.949 C 351.531 350.986 329.321 365.987 300.184 368.086 C 268.341 370.38 236.287 370.21 204.325 370.219 C 185.553 370.223 166.59 369.842 148.049 367.24 C 111.412 362.1 85.695 333.907 82.06 296.868 C 81.004 286.107 80.207 275.267 80.216 264.464 C 80.245 229.817 80.495 195.166 81.099 160.525 C 81.366 145.233 84.732 130.427 92.497 117.051 C 106.153 93.527 127.344 80.5 153.87 78.766 C 185.738 76.684 217.772 76.677 249.733 76.684 C 268.67 76.689 287.61 78.409 306.541 79.491 C 308.989 79.63 311.391 80.571 314.209 81.243 M 337.116 127.93 C 327.103 112.551 312.087 105.807 294.562 104.586 C 278.294 103.452 261.942 103.078 245.63 103.144 C 216.987 103.26 188.314 103.26 159.716 104.619 C 129.675 106.047 109.067 125.971 108.279 155.925 C 107.105 200.524 107.038 245.199 108.213 289.797 C 109.041 321.215 129.236 341.409 160.534 342.225 C 204.961 343.382 249.462 343.343 293.89 342.204 C 324.46 341.42 344.832 320.903 345.772 290.315 C 347.06 248.374 346.7 206.376 346.615 164.403 C 346.59 151.864 344.205 139.563 337.116 127.93 Z"
+                  />
+                  <path
+                    fill="#010101"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 337.324 128.231 C 344.205 139.563 346.59 151.864 346.615 164.403 C 346.7 206.376 347.06 248.374 345.772 290.315 C 344.832 320.903 324.46 341.42 293.89 342.204 C 249.462 343.343 204.961 343.382 160.534 342.225 C 129.236 341.409 109.041 321.215 108.213 289.797 C 107.038 245.199 107.105 200.524 108.279 155.925 C 109.067 125.971 129.675 106.047 159.716 104.619 C 188.314 103.26 216.987 103.26 245.63 103.144 C 261.942 103.078 278.294 103.452 294.562 104.586 C 312.087 105.807 327.103 112.551 337.324 128.231 M 177.516 166.451 C 153.389 188.612 145.258 220.234 156.125 249.636 C 166.788 278.488 193.603 297.65 224.966 298.831 C 271.589 300.586 309.716 257.302 301.611 211.819 C 291.119 152.945 224.458 128.214 177.516 166.451 M 304.635 127.411 C 292.658 128.767 285.305 139.027 288.545 149.86 C 291.152 158.578 299.614 163.857 308.581 162.361 C 317.287 160.909 323.546 152.803 323.009 143.676 C 322.477 134.649 315.366 128.042 304.635 127.411 Z"
+                  />
+                  <path
+                    fill="#F5F5F5"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 177.782 166.215 C 224.458 128.214 291.119 152.945 301.611 211.819 C 309.716 257.302 271.589 300.586 224.966 298.831 C 193.603 297.65 166.788 278.488 156.125 249.636 C 145.258 220.234 153.389 188.612 177.782 166.215 M 222.867 272.312 C 256.268 273.465 280.494 247.034 275.171 215.247 C 270.544 187.614 243.737 169.531 216.422 175.615 C 189.27 181.664 172.326 209.124 179.754 235.817 C 185.682 257.121 200.341 268.857 222.867 272.312 Z"
+                  />
+                  <path
+                    fill="#F4F4F4"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 305.063 127.405 C 315.366 128.042 322.477 134.649 323.009 143.676 C 323.546 152.803 317.287 160.909 308.581 162.361 C 299.614 163.857 291.152 158.578 288.545 149.86 C 285.305 139.027 292.658 128.767 305.063 127.405 Z"
+                  />
+                  <path
+                    fill="#010101"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 222.417 272.279 C 200.341 268.857 185.682 257.121 179.754 235.817 C 172.326 209.124 189.27 181.664 216.422 175.615 C 243.737 169.531 270.544 187.614 275.171 215.247 C 280.494 247.034 256.268 273.465 222.417 272.279 Z"
+                  />
+                </svg>
+              </a>
+              <a
+                href="https://discord.com/invite/M7dDGWKr"
+                target="_blank"
+                class="link"
+              >
+                <svg
+                  viewBox="-46.237 -14.7922 511.9767 512.0618"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    fill=""
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 153.014 490.974 C 97.065 477.674 50.642 449.456 13.812 405.848 C -17.176 369.157 -36.605 326.974 -43.333 279.36 C -53.851 204.919 -35.852 137.819 11.549 79.463 C 51.457 30.332 103.114 -0.23 165.708 -10.764 C 241.772 -23.564 310.615 -5.868 370.707 42.452 C 420.192 82.242 450.965 134.028 461.634 196.765 C 474.594 272.981 456.876 342.014 408.417 402.265 C 368.62 451.746 316.756 481.972 254.138 493.32 C 220.435 499.428 186.849 498.303 153.014 490.974 Z"
+                  />
+                  <path
+                    fill="#F6F6F6"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 96.643 117.155 C 115.573 109.559 134.786 104.377 154.41 100.583 C 156.87 100.108 158.05 100.777 159.059 102.923 C 161.321 107.728 163.896 112.388 166.102 117.217 C 167.077 119.351 168.019 120.072 170.568 119.708 C 196.612 115.986 222.693 116.048 248.734 119.703 C 251.555 120.098 252.535 119.166 253.534 116.941 C 255.642 112.247 258.005 107.668 260.184 103.005 C 261.14 100.959 262.241 100.079 264.797 100.555 C 289.082 105.076 312.51 112.305 335.096 122.299 C 337.137 123.201 338.657 124.446 339.932 126.351 C 368.025 168.332 386.282 214.06 392.466 264.356 C 395.179 286.417 395.322 308.546 393.549 330.7 C 393.306 333.737 392.28 335.804 389.678 337.671 C 363.269 356.623 334.562 370.943 303.729 381.157 C 300.184 382.331 298.479 381.567 296.519 378.609 C 291.096 370.426 286.014 362.058 281.16 353.526 C 279.371 350.382 280.218 349.332 283.184 348.237 C 290.827 345.415 298.192 341.929 305.252 337.868 C 306.888 336.927 310.019 336.929 309.475 333.91 C 309.051 331.555 302.749 329.013 300.428 330.006 C 292.181 333.535 283.867 336.86 275.284 339.518 C 222.523 355.852 170.872 352.525 120.43 330.438 C 115.331 328.205 112.965 330.933 110.142 333.437 C 108.28 335.087 110.368 335.841 111.634 336.571 C 119.418 341.057 127.458 345.041 135.874 348.17 C 139.266 349.431 139.6 350.737 137.862 353.888 C 133.037 362.637 127.852 371.134 122.165 379.347 C 120.634 381.558 119.404 382.313 116.537 381.389 C 85.123 371.261 56.056 356.557 29.226 337.352 C 26.936 335.713 26.085 333.851 25.858 331.163 C 19.573 256.72 38.081 188.765 79.116 126.637 C 82.202 121.964 87.418 121.526 91.677 119.184 C 93.123 118.389 94.736 117.898 96.643 117.155 Z"
+                  />
+                  <path
+                    fill="#020202"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 268.918 292.367 C 250.237 290.218 236.532 272.462 238.073 252.982 C 238.731 244.67 241.234 237.065 246.485 230.453 C 261.063 212.099 287.971 214.39 299.411 235.281 C 307.054 249.238 306.553 263.52 298.228 277.03 C 291.747 287.548 282.06 293.033 268.918 292.367 Z"
+                  />
+                  <path
+                    fill="#020202"
+                    opacity="1.000000"
+                    stroke="none"
+                    d="M 147.776 292.451 C 128.28 291.244 113.744 273.515 115.157 253.278 C 115.738 244.948 118.186 237.344 123.378 230.693 C 137.814 212.202 164.787 214.215 176.318 235.014 C 184.435 249.657 183.655 264.503 174.343 278.409 C 168.26 287.491 159.458 292.462 147.776 292.451 Z"
+                  />
+                </svg>
+              </a>
+            </div>
+            <p style="color: #818181; font-size: smaller">
+              2024 © All Rights Reserved
+            </p>
+          </div>
+          <div class="col2">
+            <img src="./assets/img/logo-woc.png" alt="" />
+          </div>
+        </footer>
+      </div>
     </div>
     <div class="particle-network-animation"></div>
     <script src="./assets/scripts/jquerry.js"></script>
     <script src="./assets/scripts/background.js"></script>
     <script src="./assets/scripts/main.js"></script>
     <script src="./assets/scripts/timer.js"></script>
-</body>
-
+  </body>
 </html>
